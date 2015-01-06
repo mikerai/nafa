@@ -63,6 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing: antialiased;
 }
 
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
 /* Colors */
 
 .menu {
@@ -79,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 .menu .bh:hover {
-	border-bottom: 2px solid rgb(227, 110, 0);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .transparent {
@@ -90,15 +96,53 @@ div.bh.active {
 	border-bottom: 2px solid rgb(227, 110, 0); 
 }
 
+/* Mobile Menu styles */
+
+nav a {
+	color:rgb(227, 110, 0);
+}
+
+button.menuB {
+	font-size: 1.25rem !important;
+	color: #ffffff !important;
+	background-color: rgb(227, 110, 0);
+}
+
+	button.menuB:hover, button.menuB:focus {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+div.fixed.center.hide-for-medium-up { 
+	background: rgba(255, 255, 255, 0.85); 
+}
+
+ul {
+    list-style-type:none;
+    overflow:hidden;
+}
+
 /* Spacings */
+
+.row .row {
+	margin-left: 0;
+	margin-right: 0;
+}
 
 .center {
 	text-align: center;
 }
 
-.mt-8 {
-	margin-top: 0.5rem !important;
-}
+.mtb16 {margin: 1.1rem 0 !important;}
+.mb16 {margin-bottom: 1.1rem !important;}
+
+.mtb24 {margin: 1.5rem 0 !important;}
+
+.mtb32 {margin: 2rem 0 !important;}
+.mb32 {margin-bottom: 2rem !important;}
+
+.mtb64 {margin: 4rem 0 !important;}
+.mt64 {margin-top: 4rem !important;}
+.mb64 {margin-bottom: 4rem !important;}
 
 .menu-height {
 	height: 3rem;
@@ -106,4 +150,8 @@ div.bh.active {
 
 .lh-m {
 	line-height: 4rem 
+}
+
+@media only screen and (max-width: 40.063em) { 
+	nav {display:none;}
 }

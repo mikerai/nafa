@@ -37,7 +37,7 @@ $('a').click(function(){
 }); */
 
 $(function(){
-  $('button').click(function(){
+  $('button.menuB').click(function(){
       $('nav').slideToggle();
   });
 });
