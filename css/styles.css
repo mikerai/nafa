@@ -213,6 +213,12 @@ textarea {
 	margin: 0 auto 2rem;
 }
 
+/* No Captcha recaptcha */
+
+button.success {
+	display: none;
+}
+
 /* 
  * 	Core Owl Carousel CSS File
  *	v1.3.3

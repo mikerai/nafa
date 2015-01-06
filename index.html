@@ -141,6 +141,18 @@
                 </label>
                 <small class="error">D&eacute;janos un comentario.</small>
               </div>
+              <p class="noCaptcha">
+                <label for="captcha">¿Eres humano?</label>
+                  <div class="g-recaptcha" data-sitekey="6Lfr4v4SAAAAAG2uh-QBhK-4NVX1gtyaXt5z79BT" data-callback="onValidate"></div>
+              </p>
+              <script>
+                onValidate = function ()
+                  {
+                    $("button.success").slideToggle(150);
+                    $("p.noCaptcha").fadeOut(1500);
+                    $("div.g-recaptcha").fadeOut(1500);
+                  };
+              </script>
               <button class="success" type="submit">Enviar</button>
             </form>
           </div>  
@@ -167,6 +179,7 @@
     <script src="js/foundation/foundation.abide.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/scripts.js"></script>
+    <script type='text/javascript' src="https://www.google.com/recaptcha/api.js"></script>
     <script>
       $(document).foundation();
     </script>
