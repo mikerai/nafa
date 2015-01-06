@@ -93,3 +93,12 @@ $(window).scroll(function(){
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
 });
+
+$(document).ready(function() {
+  $("#owl-example").owlCarousel({
+    items : 1,
+    //Autoplay
+    autoPlay : true,
+    stopOnHover : true
+  });
+});
