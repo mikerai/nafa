@@ -2,90 +2,135 @@
 
 /* Fonts */
 
-/* <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> */
+/* <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans:400,700' rel='stylesheet' type='text/css'> */
 
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Droid Sans';
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Droid Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMX9tREKe1lLHLCwOC24WjMs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Droid Serif';
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaJQV2lvL5Ba9FjAYK6Lx0Qk.woff2) format('woff2');
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5hVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRMZUMTqD9S0syfqvqacjFo.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z0qWMeizceScn2Xpn1ZpsKI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Droid Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5893g2OlVIdL8hHNlffo755yo.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Droid Serif';
-  font-style: italic;
+  font-family: 'Josefin Sans';
+  font-style: normal;
   font-weight: 700;
-  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(http://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpkjD34odvg9U03kuZWgP6g4.woff2) format('woff2');
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z0hGCc-A6qjNpD7cH2OEDuQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/8qcEw_nrk_5HEcCpYdJu8BTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2rxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("foundation-icons.eot");
+  src: url("foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("foundation-icons.woff") format("woff"),
+       url("foundation-icons.ttf") format("truetype"),
+       url("foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fi-telephone-accessible:before, .fi-telephone:before, .fi-print:before, .fi-address-book:before, .fi-map:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-telephone-accessible:before { content: "\f1f7"; }
+.fi-telephone:before { content: "\f1f8"; }
+.fi-print:before { content: "\f19f"; }
+.fi-address-book:before { content: "\f100"; }
+.fi-map:before { content: "\f171"; }
+
+.size-20 {
+	font-size: 1.25rem;
+}
+
+i p {
+	font-size: 1rem;
+	font-style: normal;
 }
 
 body {
-	font-family: 'Droid Sans', Arial, sans-serif;
+	font-family: 'Lato', Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Droid Serif', Arial, serif;
+	font-family: 'Josefin Sans', Arial, serif;
+	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
 	font-size: 3rem;
-	font-weight: 700;
 	text-align: center;
 }
 
 /* Colors */
 
 .menu {
-	background: rgba(255, 255, 255, 0.85);
+	background-color: rgba(227, 110, 0, 0.85);
 }
 
 	.menu a {	
-		color: rgb(227, 110, 0);
+		
+		color: rgb(255,255,255);
 		font-size: 1.5rem;
 	}
 
 		.menu a:hover {
-			color: rgba(0, 0, 0, 0.5);
+			color: rgb(136,136,136);
 		}
 
 .menu .bh:hover {
-	border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 2px solid rgb(136,136,136);
 }
 
 .transparent {
@@ -93,7 +138,13 @@ h1 {
 }
 
 div.bh.active {
-	border-bottom: 2px solid rgb(227, 110, 0); 
+	border-bottom: 2px solid rgb(0, 0, 0); 
+}
+
+li {
+	padding-left: 1rem;
+    color: rgb(227, 110, 0);
+    content: '\2022';
 }
 
 /* Mobile Menu styles */
@@ -150,6 +201,16 @@ nav ul {
 
 .lh-m {
 	line-height: 4rem 
+}
+
+textarea {
+	min-height: 150px;
+}
+
+/* Google Maps container */
+
+.flex-video {
+	margin: 0 auto 2rem;
 }
 
 /* 

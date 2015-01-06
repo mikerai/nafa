@@ -102,3 +102,12 @@ $(document).ready(function() {
     stopOnHover : true
   });
 });
+
+$(document).ready(function() {
+  $("#owl-example-2").owlCarousel({
+    items : 3,
+    //Autoplay
+    autoPlay : true,
+    stopOnHover : true
+  });
+});
