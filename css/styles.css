@@ -2,8 +2,108 @@
 
 /* Fonts */
 
+/* <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> */
 
+/* latin */
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMX9tREKe1lLHLCwOC24WjMs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaJQV2lvL5Ba9FjAYK6Lx0Qk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRMZUMTqD9S0syfqvqacjFo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5893g2OlVIdL8hHNlffo755yo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(http://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpkjD34odvg9U03kuZWgP6g4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	font-family: 'Droid Sans', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Droid Serif', Arial, serif;
+	-webkit-font-smoothing: antialiased;
+}
 
 /* Colors */
 
+.menu {
+	background: rgba(255, 255, 255, 0.85);
+}
+
+	.menu a {	
+		color: rgb(227, 110, 0);
+		font-size: 1.5rem;
+	}
+
+		.menu a:hover {
+			color: rgba(0, 0, 0, 0.5);
+		}
+
+.menu .bh:hover {
+	border-bottom: 2px solid rgb(227, 110, 0);
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+div.bh.active {
+	border-bottom: 2px solid rgb(227, 110, 0); 
+}
+
 /* Spacings */
+
+.center {
+	text-align: center;
+}
+
+.mt-8 {
+	margin-top: 0.5rem !important;
+}
+
+.menu-height {
+	height: 3rem;
+}
+
+.lh-m {
+	line-height: 4rem 
+}
