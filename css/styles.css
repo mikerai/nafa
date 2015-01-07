@@ -614,4 +614,16 @@ div.contain-to-grid.sticky.fixed .lh-m {
 	.flex-video {
 		width: 85%;
 	}
+
+	.m-menu {
+		padding-top: 4.5rem !important;
+	}
+
+	.f-topbar-fixed {
+		padding-top: 0 !important;
+	}
+
+	blockquote {
+		margin: 0;
+	}
 }
