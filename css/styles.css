@@ -53,6 +53,47 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+/* <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,700' rel='stylesheet' type='text/css'> */
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(http://fonts.gstatic.com/s/raleway/v9/8KhZd3VQBtXTAznvKjw-kwsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(http://fonts.gstatic.com/s/raleway/v9/-_Ctzj9b56b8RgXW8FAriQsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), 
+  url(http://fonts.gstatic.com/s/raleway/v9/QAUlVt1jXOgQavlW5wEfxVKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, 
+  U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), 
+  url(http://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaIwsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, 
+  U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 /* 
  * Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
@@ -70,7 +111,7 @@
   font-style: normal;
 }
 
-.fi-telephone-accessible:before, .fi-telephone:before, .fi-print:before, .fi-address-book:before, .fi-map:before {
+.fi-telephone-accessible:before, .fi-telephone:before, .fi-print:before, .fi-address-book:before, .fi-map:before, .fi-align-justify:before {
   font-family: "foundation-icons";
   font-style: normal;
   font-weight: normal;
@@ -87,9 +128,14 @@
 .fi-print:before { content: "\f19f"; }
 .fi-address-book:before { content: "\f100"; }
 .fi-map:before { content: "\f171"; }
+.fi-align-justify:before { content: "\f103"; }
 
 .size-20 {
 	font-size: 1.25rem;
+}
+
+.size-48 {
+	font-size: 3rem;
 }
 
 i p {
@@ -103,8 +149,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Josefin Sans', Arial, serif;
-	font-weight: 700;
+	font-family: 'Raleway', Arial, serif;
+	font-weight: 300;
+	margin: 0.5rem 0;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -151,6 +198,7 @@ li {
 
 nav a {
 	color:rgb(227, 110, 0);
+	font-weight: 700;
 }
 
 button.menuB {
@@ -160,24 +208,32 @@ button.menuB {
 }
 
 	button.menuB:hover, button.menuB:focus {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(227, 110, 0, 0.85);
 	}
 
 div.fixed.center.hide-for-medium-up { 
+	z-index: 999;
 	background: rgba(255, 255, 255, 0.85); 
 }
 
 nav ul {
     list-style-type:none;
     overflow:hidden;
+    margin: 0 auto;
+}
+
+	nav ul li {
+		padding: 1rem 0;
+		margin: 0;
+	}
+
+i.step.fi-align-justify {
+	float: right;
+	margin-right: 1rem;
+	color:  rgb(227, 110, 0);
 }
 
 /* Spacings */
-
-.row .row {
-	margin-left: 0;
-	margin-right: 0;
-}
 
 .center {
 	text-align: center;
@@ -196,11 +252,12 @@ nav ul {
 .mb64 {margin-bottom: 4rem !important;}
 
 .menu-height {
-	height: 3rem;
+	height: 4rem;
 }
 
 .lh-m {
-	line-height: 4rem 
+	line-height: 4rem;
+	padding: 0;
 }
 
 textarea {
@@ -211,6 +268,8 @@ textarea {
 
 .flex-video {
 	margin: 0 auto 2rem;
+	width: 95%;
+	float: none !important;
 }
 
 /* No Captcha recaptcha */
@@ -218,6 +277,22 @@ textarea {
 button.success {
 	display: none;
 }
+
+/* Foundation customizations and fixes */
+
+.row .row {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.contain-to-grid {
+	background: none;
+}
+
+div.contain-to-grid.sticky.fixed .lh-m {
+		line-height: 3rem;
+	}
 
 /* 
  * 	Core Owl Carousel CSS File
@@ -536,4 +611,7 @@ button.success {
 
 @media only screen and (max-width: 40.063em) { 
 	nav {display:none;}
+	.flex-video {
+		width: 85%;
+	}
 }

@@ -37,7 +37,7 @@ $('a').click(function(){
 }); */
 
 $(function(){
-  $('button.menuB').click(function(){
+  $('i.step.fi-align-justify').click(function(){
       $('nav').slideToggle();
   });
 });
