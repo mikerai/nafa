@@ -233,11 +233,21 @@ i.step.fi-align-justify {
 	color:  rgb(227, 110, 0);
 }
 
+.m-menu {
+	margin: 0.5rem 0 !important;
+}
+
+	.m-menu p, .m-menu blockquote {
+		margin: 0;
+	}
+
 /* Spacings */
 
 .center {
 	text-align: center;
 }
+
+.mtb8 {margin: 0.5rem 0 !important;}
 
 .mtb16 {margin: 1.1rem 0 !important;}
 .mb16 {margin-bottom: 1.1rem !important;}
@@ -617,6 +627,7 @@ div.contain-to-grid.sticky.fixed .lh-m {
 
 	.m-menu {
 		padding-top: 4.5rem !important;
+		margin: 0 !important;
 	}
 
 	.f-topbar-fixed {
