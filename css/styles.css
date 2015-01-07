@@ -305,9 +305,15 @@ button.success {
 	background: none;
 }
 
-div.contain-to-grid.sticky.fixed .lh-m {
-		line-height: 3rem;
-	}
+nav.row.menu-height.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
+	line-height: 2.5rem;
+}
+
+.panel {
+	box-shadow: 1px 1px 55px #888888;
+	opacity: 1;
+	visibility: visible;
+}
 
 /* 
  * 	Core Owl Carousel CSS File
