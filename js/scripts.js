@@ -37,7 +37,8 @@ $('a').click(function(){
 }); */
 
 $(function(){
-  $('i.step.fi-align-justify').click(function(){
+  $('i.step.fi-align-justify').click(function(e){
+      e.preventDefault();
       $('nav').slideToggle();
   });
 });
@@ -104,8 +105,10 @@ $(window).scroll(function(){
    }                   
 });
 
+/* Carousel */
+
 $(document).ready(function() {
-  $("#owl-example, #owl-example-2").owlCarousel({
+  $("#owl-example").owlCarousel({
     items : 1,
     //Autoplay
     autoPlay : true,
@@ -115,7 +118,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#owl-example-2").owlCarousel({
-    items : 3
+    items : 3,
+    //Autoplay
+    autoPlay : true,
+    stopOnHover : true
   });
 });
 

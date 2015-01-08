@@ -128,6 +128,12 @@ h1 {
 	text-align: center;
 }
 
+.panel h2 {
+	font-weight: 700;
+	text-align: center;
+	color: rgb(227, 110, 0);
+}
+
 /* Colors */
 
 .menu {
@@ -282,7 +288,7 @@ p.success {
 	background: none;
 }
 
-nav.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
+div.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	line-height: 2.5rem;
 }
 
@@ -291,6 +297,9 @@ nav.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	opacity: 1;
 	visibility: visible;
 }
+	.panel div.large-6 p {
+		text-align: center;
+	}
 
 label small {
 	float: right;
