@@ -131,23 +131,23 @@
 
     <div class="row" id="contacto">
         <h2>Ponte en contacto con nosotros</h2>
-          <div class="large-6 columns">
-            <form data-abide>
+          <div class="large-6 medium-6 small-12 columns">
+            <form data-abide class="cmxform" id="commentForm" method="post" action="verify.php" novalidate="novalidate">
               <div class="name-field">
                 <label>Tu nombre <small>requerido</small>
-                  <input type="text" required pattern="[a-zA-Z]+">
+                  <input type="text" name="name" required pattern="[a-zA-Z]+">
                 </label>
                 <small class="error">Necesitamos tu nombre para saber qui&eacute;n eres</small>
               </div>
               <div class="email-field">
                 <label>Correo electr&oacute;nico <small>requerido</small>
-                  <input type="email" required>
+                  <input type="email" name="email" required>
                 </label>
                 <small class="error">Direcci&oacute;n de correo electr&oacute;nico no v&aacute;lida</small>
               </div>
               <div class="comment-field">
                 <label>Tus comentarios <small>requerido</small>
-                  <textarea type="text" required pattern="[a-zA-Z]+"></textarea>
+                  <textarea type="text" name="comment" required pattern="[a-zA-Z]+"></textarea>
                 </label>
                 <small class="error">D&eacute;janos un comentario.</small>
               </div>
@@ -163,10 +163,10 @@
                     $("div.g-recaptcha").fadeOut(1500);
                   };
               </script>
-              <button class="success" type="submit">Enviar</button>
+              <button class="success submit" type="submit">Enviar</button>
             </form>
           </div>  
-          <div class="large-6 columns">
+          <div class="large-6 medium-6 small-12 columns">
             <div class="large-12 columns">
               <i class="step fi-map size-20"> Domicilio<p>Francisco I Madero s/n Letra B. <br>Colonia Los Reyes Ampliaci&oacute;n<br>Estado de M&eacute;xico.<br>La Paz<br>CP. 56400</p></i>
             </div>
@@ -191,13 +191,14 @@
     </footer>
 
     </div>
-    <script src="js/vendor/modernizr.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/foundation/foundation.topbar.js"></script>
-    <script src="js/foundation/foundation.abide.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/scripts.js"></script>
+    <script type='text/javascript' src="js/vendor/modernizr.js"></script>
+    <script type='text/javascript' src="js/vendor/jquery.js"></script>
+    <script type='text/javascript' src="js/foundation.min.js"></script>
+    <script type='text/javascript' src="js/foundation/foundation.topbar.js"></script>
+    <script type='text/javascript' src="js/foundation/foundation.abide.js"></script>
+    <script type='text/javascript' src="js/owl.carousel.js"></script>
+    <script type='text/javascript' src="js/scripts.js"></script>
+    <script type='text/javascript' src="js/validate.js"></script>
     <script type='text/javascript' src="https://www.google.com/recaptcha/api.js"></script>
     <script>
       $(document).foundation();

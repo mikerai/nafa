@@ -95,7 +95,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
-  $("#owl-example").owlCarousel({
+  $("#owl-example, #owl-example-2").owlCarousel({
     items : 1,
     //Autoplay
     autoPlay : true,
@@ -105,9 +105,79 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#owl-example-2").owlCarousel({
-    items : 3,
-    //Autoplay
-    autoPlay : true,
-    stopOnHover : true
+    items : 3
   });
+});
+
+//Contact Form
+
+$(document).ready(function () {
+            //$("button[type=submit]").attr("disabled", "disabled");
+            $("#commentForm").validate({
+                rules: {
+                    name: { 
+                      required: true,
+                      minlength: 2
+                    },
+                    email: {
+                      required: true,
+                      email: true
+                    },
+                    comment: {
+                        required: true,
+                        minlength: 5
+                    }
+                  },
+                  messages: {
+                    name: {
+                      required: "Please specify your name",
+                      minlength: "At least two characters are required"
+                    },
+                    email: {
+                      required: "We need your email address to contact you",
+                      email: "Your email address must be in the format of name@domain.com"
+                    },
+                    comment: {
+                      required: "You need to enter some message",
+                      minlength: "Please add something to the message field"
+                    }
+                  }, 
+            });
+
+            /*$('#commentForm').bind('change keyup', function() {
+                if($(this).validate().checkForm()) {
+                    $('button[type=submit]').attr('disabled', false);
+                } else {
+                    $('button[type=submit]').attr('disabled', true);
+                }
+            });*/
+
+            $("button.submit").click(function () {
+                if (!$("#commentForm").validate()) { // Not Valid
+                    return false;
+                } else {
+                    //$("button.submit").prop('disabled', false);
+                    $("#commentForm").submit()
+                }
+            });
+        });
+
+//Contact error removal and success
+
+        $(document).on('submit', 'form#commentForm', function (e) {
+            e.preventDefault();
+            $('form#commentForm .error').remove();
+            var hasError = false;
+            if (!hasError) {
+                $('form#commentForm input.submit').fadeOut('normal', function () {
+                    $(this).parent().append('');
+                });
+                var formInput = $(this).serialize();
+                $.post($(this).attr('action'), formInput, function (data) {
+                    $('form#commentForm').slideUp("fast", function () {
+                        $(this).before('<p class="success">¡Gracias! El correo ha sido exitosamente enviado; en breve nos pondremos en contacto.</p>');
+                    });
+                });
+            }
+            return false;
 });

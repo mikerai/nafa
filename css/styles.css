@@ -293,6 +293,13 @@ button.success {
 	display: none;
 }
 
+/* Contact form styles */
+
+p.success {
+	font-size: 1.5rem;
+	color: #43AC6A;
+} 
+
 /* Foundation customizations and fixes */
 
 .row .row {
