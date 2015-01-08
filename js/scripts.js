@@ -47,6 +47,16 @@ $("#main").on("click", function(e){
     $('nav').slideUp();
 });
 
+//Read more
+
+$(function(){ /* to make sure the script runs after page load */
+    $('a.read_more').click(function(event){ /* find all a.read_more elements and bind the following code to them */
+        event.preventDefault(); /* prevent the a from changing the url */
+        $(this).parents('.item').find('.more_text').slideToggle(); /* show the .more_text span */
+        $('a.read_more').fadeOut();
+    });
+});
+
 // Cache selectors
 var lastId,
     topMenu = $("#top-menu, nav, .footer"),

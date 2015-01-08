@@ -4,38 +4,8 @@
 
 /* <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans:400,700' rel='stylesheet' type='text/css'> */
 
-/* latin-ext */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5hVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z0qWMeizceScn2Xpn1ZpsKI.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Josefin Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z0hGCc-A6qjNpD7cH2OEDuQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+/* <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,700' rel='stylesheet' type='text/css'> */
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -52,8 +22,6 @@
   src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2rxTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
-/* <link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,700' rel='stylesheet' type='text/css'> */
 
 /* latin */
 @font-face {
@@ -261,10 +229,6 @@ i.step.fi-align-justify {
 .mt64 {margin-top: 4rem !important;}
 .mb64 {margin-bottom: 4rem !important;}
 
-.menu-height {
-	height: 4rem;
-}
-
 .lh-m {
 	line-height: 4rem;
 	padding: 0;
@@ -293,6 +257,12 @@ button.success {
 	display: none;
 }
 
+/* Read More */
+
+div.more_text {
+	display: none;
+}
+
 /* Contact form styles */
 
 p.success {
@@ -312,7 +282,7 @@ p.success {
 	background: none;
 }
 
-nav.row.menu-height.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
+nav.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	line-height: 2.5rem;
 }
 
@@ -320,6 +290,11 @@ nav.row.menu-height.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	box-shadow: 1px 1px 55px #888888;
 	opacity: 1;
 	visibility: visible;
+}
+
+label small {
+	float: right;
+	font-style: italic;
 }
 
 /* 
