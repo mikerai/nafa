@@ -58,66 +58,45 @@ $(function(){ /* to make sure the script runs after page load */
     });
 });
 
-// Cache selectors
-var lastId,
-    topMenu = $("#top-menu, nav, .footer"),
-    topMenuHeight = topMenu.outerHeight()+150,
-    // All list items
-    menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-    scrollItems = menuItems.map(function(){
-      var item = $($(this).attr("href"));
-      if (item.length) { return item; }
-    });
+// SPY MENU Cache selectors
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-66;
-  $('html, body').stop().animate({ 
-      scrollTop: offsetTop
-  }, 987);
-  e.preventDefault();
-  $('nav').slideUp();
-});
 
-// Bind to scroll
-$(window).scroll(function(){
-   // Get container scroll position
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   // Get id of current scroll item
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-   // Get the id of the current element
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems
-         .parent().removeClass("active")
-         .end().filter("[href=#"+id+"]").parent().addClass("active");
-   }                   
-});
+$('div#top-menu a').on('click', function() {
+
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 50;
+
+    $('body,html').animate({
+        scrollTop: scrollPoint
+    }, 987);
+
+    return false;
+
+})
+
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    if (windscroll >= 100) {
+        $('#main section').each(function(i) {
+            if ($(this).position().top <= windscroll + 51) {
+                $('div.bh.active').removeClass('active');
+                $('div.bh').eq(i).addClass('active');
+            }
+        });
+
+    } else {
+
+        $('div.bh.active').removeClass('active');
+        $('div.bh a:first').addClass('active');
+    }
+
+}).scroll();
 
 /* Carousel */
 
 $(document).ready(function() {
   $("#owl-example").owlCarousel({
-    items : 1,
-    //Autoplay
-    autoPlay : true,
-    stopOnHover : true
-  });
-});
-
-$(document).ready(function() {
-  $("#owl-example-2").owlCarousel({
     items : 3,
     //Autoplay
     autoPlay : true,
