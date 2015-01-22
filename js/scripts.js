@@ -60,7 +60,6 @@ $(function(){ /* to make sure the script runs after page load */
 
 // SPY MENU Cache selectors
 
-
 $('div#top-menu a').on('click', function() {
 
     var scrollAnchor = $(this).attr('data-scroll'),
@@ -73,7 +72,6 @@ $('div#top-menu a').on('click', function() {
     return false;
 
 })
-
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
@@ -175,4 +173,8 @@ $(document).ready(function () {
                 });
             }
             return false;
+});
+
+$(function(){
+  $('#Container').mixItUp();
 });
