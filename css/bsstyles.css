@@ -7,10 +7,14 @@
 }
 
 p.nafa a {
-	color: rgb(227, 110, 0);
+	color: rgb(255,255,255);
 }
 
 /* Colors */
+
+body {
+	background-color: rgb(207,222,92);
+}
 
 .menu {
 	background-color: rgba(207, 222, 92, 0.85);
@@ -32,7 +36,7 @@ li {
 }
 
 section#quienes h3 {
-	color: rgb(207,222,92);
+	color: rgb(255,255,255);
 	font-weight: 700;
 }
 

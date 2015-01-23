@@ -150,7 +150,7 @@ h1 {
 			color: rgb(0,0,0);
 		}
 
-.menu .bh:hover {
+div.bh:hover {
 	border-bottom: 2px solid rgb(0,0,0);
 }
 
@@ -307,6 +307,16 @@ div.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	.panel div.large-6 p {
 		text-align: center;
 	}
+
+.panel {
+	border-style: none;
+	border-width: 0;
+	border-color: transparent;
+	margin-bottom: 1.25rem;
+	padding: 1.25rem;
+	background: transparent;
+	color: #333333;
+}
 
 label small {
 	float: right;
