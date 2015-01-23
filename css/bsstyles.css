@@ -1,0 +1,98 @@
+/* Bag Solutions styling */
+
+/* rgb(207,222,92); */
+
+.panel h3 {
+	font-weight: 700;
+	text-align: center;
+	color: rgb(207,222,92);
+}
+
+/* Colors */
+
+.menu {
+	background-color: rgba(207, 222, 92, 0.85);
+}
+
+	.menu a {	
+		
+		color: rgb(255,255,255);
+		font-size: 1.5rem;
+	}
+
+		.menu a:hover {
+			color: rgb(0,0,0);
+		}
+
+.menu .bh:hover {
+	border-bottom: 2px solid rgb(0,0,0);
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+div.bh.active {
+	border-bottom: 2px solid rgb(207,222,92);
+	background-color: rgb(255,255,255);
+}
+
+	div.bh.active a {
+		color: rgb(207,222,92);
+	}
+
+li {
+	padding-left: 1rem;
+    color: rgb(207,222,92);
+    content: '\2022';
+}
+
+section#quienes h3 {
+	color: rgb(207,222,92);
+	font-weight: 700;
+}
+
+/* Mobile Menu styles */
+
+nav a {
+	color:rgb(207,222,92);
+	font-weight: 700;
+}
+
+button.menuB {
+	font-size: 1.25rem !important;
+	color: #ffffff !important;
+	background-color: rgb(207,222,92);
+}
+
+	button.menuB:hover, button.menuB:focus {
+		background-color: rgba(207, 222, 92, 0.85);
+	}
+
+div.fixed.center.hide-for-medium-up { 
+	z-index: 999;
+	background: rgba(255, 255, 255, 0.85); 
+}
+
+nav ul {
+    list-style-type:none;
+    overflow:hidden;
+    margin: 0 auto;
+}
+
+	nav ul li {
+		padding: 1rem 0;
+		margin: 0;
+	}
+
+i.step.fi-align-justify {
+	color:  rgb(207,222,92);
+}
+
+.m-menu {
+	margin: 0.5rem 0 !important;
+}
+
+	.m-menu p, .m-menu blockquote {
+		margin: 0;
+	}

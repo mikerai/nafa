@@ -102,6 +102,15 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $("#owl-example-2").owlCarousel({
+    items : 1,
+    //Autoplay
+    autoPlay : true,
+    stopOnHover : true
+  });
+});
+
 //Contact Form
 
 $(document).ready(function () {
