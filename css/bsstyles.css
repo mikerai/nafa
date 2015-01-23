@@ -6,6 +6,10 @@
 	color: rgb(207,222,92);
 }
 
+p.nafa a {
+	color: rgb(227, 110, 0);
+}
+
 /* Colors */
 
 .menu {
@@ -46,8 +50,8 @@ button.menuB {
 		background-color: rgba(207, 222, 92, 0.85);
 	}
 
-div.fixed.center.hide-for-medium-up { 
-	background: rgba(255, 255, 255, 0.85); 
+div.fixed.center.hide-for-medium-up {
+	background: rgba(255, 255, 255, 0.95);
 }
 
 i.step.fi-align-justify {
