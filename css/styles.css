@@ -131,13 +131,21 @@ h1 {
 .panel h3 {
 	font-weight: 700;
 	text-align: center;
-	color: rgb(227, 110, 0);
+	color: rgb(234, 107, 0);
 }
 
 /* Colors */
 
+body {
+	background-color: rgb(234, 107, 0);
+}
+
+#main {
+	background-color: #ffffff;
+}
+
 .menu {
-	background-color: rgba(227, 110, 0, 0.85);
+	background-color: rgba(234, 107, 0, 0.85);
 }
 
 	.menu a {	
@@ -159,35 +167,35 @@ div.bh:hover {
 }
 
 div.bh.active {
-	border-bottom: 2px solid rgb(227, 110, 0);
+	border-bottom: 2px solid rgb(234, 107, 0);
 	background-color: rgb(255,255,255);
 }
 
 	div.bh.active a {
-		color: rgb(227, 110, 0);
+		color: rgb(234, 107, 0);
 	}
 
 li {
 	padding-left: 1rem;
-    color: rgb(227, 110, 0);
+    color: rgb(234, 107, 0);
     content: '\2022';
 }
 
 /* Mobile Menu styles */
 
 nav a {
-	color:rgb(227, 110, 0);
+	color:rgb(234, 107, 0);
 	font-weight: 700;
 }
 
 button.menuB {
 	font-size: 1.25rem !important;
 	color: #ffffff !important;
-	background-color: rgb(227, 110, 0);
+	background-color: rgb(234, 107, 0);
 }
 
 	button.menuB:hover, button.menuB:focus {
-		background-color: rgba(227, 110, 0, 0.85);
+		background-color: rgba(234, 107, 0, 0.85);
 	}
 
 div.fixed.center.hide-for-medium-up { 
@@ -207,7 +215,7 @@ nav ul {
 	}
 
 i.step.fi-align-justify {
-	color:  rgb(227, 110, 0);
+	color:  rgb(234, 107, 0);
 }
 
 .m-menu {
@@ -300,6 +308,8 @@ div.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 }
 
 .panel {
+	-moz-box-shadow: 1px 1px 55px #888888;
+	-webkit-box-shadow: 1px 1px 55px #888888;
 	box-shadow: 1px 1px 55px #888888;
 	opacity: 1;
 	visibility: visible;
@@ -325,13 +335,16 @@ label small {
 
 footer {
 	max-width: 160rem;
-	background-color: rgb(119,119,119);
-	background-color: rgba(119, 119, 119, 0.9);
+	background-color: rgb(40,43,42);
 	padding-top: 1rem;
+	-moz-box-shadow: 1px 1px 55px #888888;
+	-webkit-box-shadow: 1px 1px 55px #888888;
+	box-shadow: 1px 1px 55px #888888;
 }
 
 	footer p {
 		font-size: 1.5rem;
+		color: #ffffff;
 	}
 
 .reveal-modal-bg {
@@ -345,6 +358,16 @@ footer {
 	z-index: 1004;
 	display: none;
 	left: 0;
+}
+
+/* Image aligh hack */
+
+.pt12 {
+	padding-top: 12%;
+}
+
+.pt30 {
+	padding-top: 30%;
 }
 
 /* 
@@ -689,7 +712,7 @@ div.controls > button{
 }
 
 div.controls > button.active{
-  background: rgb(227, 110, 0);
+  background: rgb(234, 107, 0);
 }
 
 div.controls > button:focus{
@@ -1059,5 +1082,9 @@ div.controls > button + label{
 
 	blockquote {
 		margin: 0;
+	}
+
+	.pt12, .pt30 {
+		padding-top: 0;
 	}
 }

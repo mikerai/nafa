@@ -19,10 +19,10 @@
           <nav>
             <ul>
               <li><a onclick="location.href='index-en.html'"><img src="img/Flag_of_the_United_States_thumb.png" alt="Flag of the United States used to change site language" /></a></li>
-              <li><a class="" href="#inicio">Inicio</a></li>
-              <li><a class="" href="#productos">Productos</a></li>
-              <li><a class="" href="#quienes">Quienes Somos</a></li>
-              <li><a class="" href="#contacto">Contacto</a></li>
+              <li><a data-scroll="inicio" class="" href="#">Inicio</a></li>
+              <li><a data-scroll="productos" class="" href="#">Productos</a></li>
+              <li><a data-scroll="quienes" class="" href="#">Quienes Somos</a></li>
+              <li><a data-scroll="contacto" class="" href="#">Contacto</a></li>
             </ul>
           </nav>
       </div>
@@ -60,11 +60,16 @@
     </div>
     
     <section class="row mtb24" id="inicio" data-anchor="inicio">
-      <div class="large-3 medium-3 small-12 columns">
+      <!--<div class="large-3 medium-3 small-12 columns">
         <p><img src="img/licencia-disney.jpg" alt="Contamos con licencia Disney"></p>
-      </div>
-      <div class="large-9 medium-9 small-12 columns">
+      </div>-->
+      <div class="large-12 medium-12 small-12 columns">
         <h1>Bienvenidos a Grupo NAFA</h1>
+      </div>
+      <div class="large-12 medium-12 small-12 columns">
+        <div class="flex-video">
+          <iframe width="420" height="315" src="http://www.youtube.com/embed/iIoPwFIrJmQ?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
     
@@ -72,35 +77,30 @@
       <div class="large-12 columns">
       	<div class="panel">
 	        <h2>Nuestros productos</h2>
-	        <p>Aqu&iacute; podemos mostrar las categor&iacute;as de productos m&aacute;s relevantes.</p>
-          <div class="row">
+	        <p>Contamos con cuatro divisiones especializadas donde seguro encontrar&aacute;s el producto que necesitas.</p>
+          <div class="row ">
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Hogar</h3>
-              <p><a onclick="location.href='productos.html'"><img src="img/hogar.png" alt="Hogar" /></a></p>
+              <p><a onclick="location.href='productos.html'"><img class="pt30" src="img/forramex-logo.png" alt="Productos para el hogar" /></a></p>
             </div>
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Publicidad</h3>
-              <p><a onclick="location.href='productos.html'"><img src="img/publi.png" alt="Publicidad" /></a></p>
+              <p><a onclick="location.href='productos.html'"><img src="img/marna-plastica-logo.png" alt="Pel&iacute;culas" /></a></p>
             </div>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Papeler&iacute;as</h3>
-              <p><a onclick="location.href='productos.html'"><img src="img/papeleria.png" alt="Papeler%iacute;as" /></a></p>
+              <p class="center"><a onclick="location.href='bag-solutions.html'"><img class="pt12" src="img/logo-BagSolutions.png" alt="Bag Solutions" /></a></p>
             </div>
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Pel&iacute;culas</h3>
-              <p><a onclick="location.href='productos.html'"><img src="img/peliculas.png" alt="Pel&iacute;culas" /></a></p>
+              <p><a onclick="location.href='productos.html'"><img src="img/marena-logo.jpg" alt="Inflables"></a></p>
             </div>
           </div>
-          <div class="row mtb16">
+          <!--<div class="row mtb16">
             <div class="large-12 medium-12 small-12 columns">
               <h3>Visita nuestra p&aacute;gina de Bag Solutions</h3>
-              <p class="center"><a onclick="location.href='bag-solutions.html'"><img src="img/logo-BagSolutions.png" alt="Logo de Bag Solutions" style="max-width: 400px;" /></a></p>
-            </div>
+              <p class="center"><a onclick="location.href='bag-solutions.html'"><img src="img/logo-BagSolutions.png" alt="Logo de Bag Solutions" /></a></p>
+            </div>-->
           </div>
       	</div>
-      </div>
     </section>
 
     <section class="row" id="quienes" data-anchor="quienes">
@@ -180,7 +180,8 @@
                     </div>
                     <div>
                       <img src="img/17.jpg" alt="Nosotros" />
-                    </div> 
+                    </div>
+                    <!--div*5>img[src="img/$.jpg"]--> 
                 </div>
           </div>
         </div>
@@ -239,7 +240,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60220.297505636554!2d-98.971539!3d19.37917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7e09ee6413d%3A0xa0451d707488d2f7!2sGrupo+Nafa!5e0!3m2!1sen!2s!4v1420581935968" width="800" height="400" frameborder="0" style="border:0"></iframe>
           </div>
       </section>  
-    </div>
+  </div>
 
     <footer>
       <div class="row">

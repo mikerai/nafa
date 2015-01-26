@@ -60,17 +60,13 @@ $(function(){ /* to make sure the script runs after page load */
 
 // SPY MENU Cache selectors
 
-$('div#top-menu a').on('click', function() {
-
+$('div#top-menu a, nav a').on('click', function() {
     var scrollAnchor = $(this).attr('data-scroll'),
         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 50;
-
     $('body,html').animate({
         scrollTop: scrollPoint
-    }, 987);
-
+        }, 987);
     return false;
-
 })
 
 $(window).scroll(function() {
@@ -80,6 +76,7 @@ $(window).scroll(function() {
             if ($(this).position().top <= windscroll + 51) {
                 $('div.bh.active').removeClass('active');
                 $('div.bh').eq(i).addClass('active');
+                $('nav').slideUp();
             }
         });
 
