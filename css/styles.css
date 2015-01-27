@@ -181,6 +181,15 @@ li {
     content: '\2022';
 }
 
+.black {
+	color: rgb(0,0,0);
+}
+
+section#quienes div.item h2 {
+	color:rgb(234, 107, 0);
+	font-weight: 700;
+}
+
 /* Mobile Menu styles */
 
 nav a {
@@ -264,6 +273,20 @@ textarea {
 	padding-right: 0.9375rem;
 }
 
+.pt4 {
+	padding-top: 4%;
+}
+
+/* Image aligh hack */
+
+.pt12 {
+	padding-top: 12%;
+}
+
+.pt30 {
+	padding-top: 30%;
+}
+
 /* Google Maps container */
 
 .flex-video {
@@ -275,12 +298,6 @@ textarea {
 /* No Captcha recaptcha */
 
 button.success {
-	display: none;
-}
-
-/* Read More */
-
-div.more_text {
 	display: none;
 }
 
@@ -358,16 +375,6 @@ footer {
 	z-index: 1004;
 	display: none;
 	left: 0;
-}
-
-/* Image aligh hack */
-
-.pt12 {
-	padding-top: 12%;
-}
-
-.pt30 {
-	padding-top: 30%;
 }
 
 /* 
@@ -1084,7 +1091,7 @@ div.controls > button + label{
 		margin: 0;
 	}
 
-	.pt12, .pt30 {
+	.pt4, .pt12, .pt30 {
 		padding-top: 0;
 	}
 }
