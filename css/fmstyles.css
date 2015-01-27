@@ -1,0 +1,82 @@
+/* Forramex styling */
+
+/* rgb(19,149,212); Clear blue */
+
+/* rgb(9,66,146);  Darker blue*/
+
+.panel h3 {
+	color: rgb(9,66,146);
+}
+
+p.nafa a {
+	color: rgb(234,107,0);
+}
+
+/* Colors */
+
+body {
+	background-color: rgb(19,149,212);
+}
+
+#main {
+	background-color: #ffffff;	
+}
+
+.menu {
+	background-color: rgba(19, 149, 212, 0.85)
+}
+
+div.bh.active {
+	border-bottom: 2px solid rgb(19,149,212);
+	background-color: rgb(255,255,255);
+}
+
+	div.bh.active a {
+		color: rgb(19,149,212);
+	}
+
+li {
+	padding-left: 1rem;
+    color: rgb(9,66,146);
+    content: '\2022';
+}
+
+section#quienes h3 {
+	color: rgb(9,66,146);
+	font-weight: 700;
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(9,66,146);
+}
+
+/* Mobile Menu styles */
+
+nav a {
+	color:rgb(9,66,146);
+}
+
+button.menuB {
+	background-color: rgb(19,149,212);
+}
+
+	button.menuB:hover, button.menuB:focus {
+		background-color: rgba(19, 149, 212, 0.85)
+	}
+
+div.fixed.center.hide-for-medium-up {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+i.step.fi-align-justify {
+	color:  rgb(19,149,212);
+}
+
+div.controls > button.active {
+	background: rgb(19,149,212);
+}
+
+div.controls > button {
+	color: rgb(255,255,255);
+}

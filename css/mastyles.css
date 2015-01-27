@@ -1,0 +1,82 @@
+/* Marena styling */
+
+/* rgb(20,167,213); Blue*/
+
+/* rgb(157,0,108); Purple*/
+
+.panel h3 {
+	color: rgb(157,0,108);
+}
+
+p.nafa a {
+	color: rgb(234,107,0);
+}
+
+/* Colors */
+
+body {
+	background-color: rgb(20,167,213);;
+}
+
+#main {
+	background-color: #ffffff;	
+}
+
+.menu {
+	background-color: rgba(20,167,213,0.85);
+}
+
+div.bh.active {
+	border-bottom: 2px solid rgb(20,167,213);;
+	background-color: rgb(255,255,255);
+}
+
+	div.bh.active a {
+		color: rgb(20,167,213);;
+	}
+
+li {
+	padding-left: 1rem;
+    color: rgb(157,0,108);
+    content: '\2022';
+}
+
+section#quienes h3 {
+	color: rgb(157,0,108);
+	font-weight: 700;
+	text-align: center;
+}
+
+footer {
+	background-color: rgb(157,0,108);
+}
+
+/* Mobile Menu styles */
+
+nav a {
+	color:rgb(157,0,108);
+}
+
+button.menuB {
+	background-color: rgb(20,167,213);;
+}
+
+	button.menuB:hover, button.menuB:focus {
+		background-color: rgba(20,167,213,0.85);
+	}
+
+div.fixed.center.hide-for-medium-up {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+i.step.fi-align-justify {
+	color:  rgb(20,167,213);;
+}
+
+div.controls > button.active {
+	background: rgb(20,167,213);;
+}
+
+div.controls > button {
+	color: rgb(255,255,255);
+}

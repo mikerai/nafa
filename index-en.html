@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo NAFA | Welcome</title>
+    <title>Grupo NAFA | Bienvenidos</title>
 
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     
   </head>
   <body>
@@ -18,11 +19,11 @@
         <i class="step fi-align-justify size-48"></i>
           <nav>
             <ul>
-              <li><a onclick="location.href='index.html'"><img src="img/Flag_of_Mexico_thumb.png" alt="Flag of the United States used to change site language" /></a></li>
-              <li><a class="" href="#inicio">Inicio</a></li>
-              <li><a class="" href="#productos">Productos</a></li>
-              <li><a class="" href="#quienes">Quienes Somos</a></li>
-              <li><a class="" href="#contacto">Contacto</a></li>
+              <li><a onclick="location.href='index.html'"><img src="img/Flag_of_Mexico_thumb.png" alt="Bandera de M&eacute;xico usada para cambiar el idioma del siti" /></a></li>
+              <li><a data-scroll="inicio" class="" href="#">Inicio</a></li>
+              <li><a data-scroll="productos" class="" href="#">Productos</a></li>
+              <li><a data-scroll="contacto" class="" href="#">Contacto</a></li>
+              <li><a onclick="location.href='nosotros.html'">Quienes Somos</a></li>
             </ul>
           </nav>
       </div>
@@ -32,12 +33,12 @@
 
     <div class="row m-menu">
       <div class="large-1 medium-1 hide-for-small columns">
-        <p><a onclick="location.href='index.html'"><img src="img/Flag_of_Mexico.png" alt="Flag of the United States used to change site language" /></a></p>
+        <p><a onclick="location.href='index.html'"><img src="img/Flag_of_Mexico.png" alt="Bandera de M&eacute;xico usada para cambiar el idioma del sitio" /></a></p>
       </div>
       <div class="large-4 medium-4 small-12 columns center">
-        <p><img src="img/grupo-nafa-logo.png" alt="Logo Grupo NAFA" style="height:64px;" /></p>
+        <p><img src="img/NAFA-logo.png" alt="Logo Grupo NAFA" /></p>
       </div>
-      <div class="large-7 medium-7 small-11 columnns">
+      <div class="large-7 medium-7 small-11 columnns pt4">
         <blockquote class="center">Empresa l&iacute;der en la Industria de los pl&aacute;sticos en la Rep&uacute;blica Mexicana con m&aacute;s de 40 a&ntilde;os de experiencia y de servicio al mercado.</blockquote>
       </div> 
     </div>
@@ -51,20 +52,23 @@
           <a data-scroll="productos" href="#" class="transparent">Productos</a>
         </div>
         <div class="large-3 medium-3 columns bh">
-          <a data-scroll="quienes" href="#" class="transparent">Quienes Somos</a>
+          <a data-scroll="contacto" href="#" class="transparent">Contacto</a>
         </div>
         <div class="large-3 medium-3 columns bh">
-          <a data-scroll="contacto" href="#" class="transparent">Contacto</a>
+          <a onclick="location.href='nosotros.html'" class="transparent">Quienes Somos</a>
         </div>
       </div>
     </div>
     
     <section class="row mtb24" id="inicio" data-anchor="inicio">
-      <div class="large-3 medium-3 small-12 columns">
+      <!--<div class="large-3 medium-3 small-12 columns">
         <p><img src="img/licencia-disney.jpg" alt="Contamos con licencia Disney"></p>
-      </div>
-      <div class="large-9 medium-9 small-12 columns">
+      </div>-->
+      <div class="large-12 medium-12 small-12 columns">
         <h1>Bienvenidos a Grupo NAFA</h1>
+      </div>
+      <div class="large-8 large-centered medium-10 medium-centered small-11 small-centered columns center">
+          <iframe width="100%" height="315px" src="http://www.youtube.com/embed/iIoPwFIrJmQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
     
@@ -72,123 +76,34 @@
       <div class="large-12 columns">
         <div class="panel">
           <h2>Nuestros productos</h2>
-          <p>Aqu&iacute; podemos mostrar las categor&iacute;as de productos m&aacute;s relevantes.</p>
-          <div class="row">
+          <p>Contamos con cuatro divisiones especializadas donde seguro encontrar&aacute;s el producto que necesitas.</p>
+          <div class="row ">
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Hogar</h3>
-              <p><a onclick="location.href='products.html'"><img src="img/hogar.png" alt="Hogar" /></a></p>
+              <p><a onclick="location.href='forramex.html'"><img class="pt30" src="img/forramex-logo.png" alt="Productos para el hogar" /></a></p>
             </div>
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Publicidad</h3>
-              <p><a onclick="location.href='products.html'"><img src="img/publi.png" alt="Publicidad" /></a></p>
+              <p><a onclick="location.href='marna.html'"><img src="img/marna-plastica-logo.png" alt="Pel&iacute;culas" /></a></p>
             </div>
           </div>
-          <div class="row">
+          <div class="row ">
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Papeler&iacute;as</h3>
-              <p><a onclick="location.href='products.html'"><img src="img/papeleria.png" alt="Papeler%iacute;as" /></a></p>
+              <p><a onclick="location.href='marena.html'"><img src="img/marena-logo.png" alt="Inflables"></a></p>
             </div>
             <div class="large-6 medium-6 small-12 columns">
-              <h3>Pel&iacute;culas</h3>
-              <p><a onclick="location.href='products.html'"><img src="img/peliculas.png" alt="Pel&iacute;culas" /></a></p>
+              <p class="center"><a onclick="location.href='bag-solutions.html'"><img class="pt12" src="img/logo-BagSolutions.png" alt="Bag Solutions" /></a></p>
             </div>
           </div>
-          <div class="row mtb16">
+          <!--<div class="row mtb16">
             <div class="large-12 medium-12 small-12 columns">
               <h3>Visita nuestra p&aacute;gina de Bag Solutions</h3>
-              <p class="center"><a onclick="location.href='bag-solutions.html'"><img src="img/bag-solutions-logo.jpg" alt="Logo de Bag Solutions" /></a></p>
-            </div>
+              <p class="center"><a onclick="location.href='bag-solutions.html'"><img src="img/logo-BagSolutions.png" alt="Logo de Bag Solutions" /></a></p>
+            </div>-->
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="row" id="quienes" data-anchor="quienes">
-      <div class="large-12 medium-12 columns">
-        <h3>Acerca de Grupo NAFA:</h3>
-        <div class="row">
-          <div class="large-12 columns item">
-            <p><span class="">Empresa Internacional con sede en la Ciudad de M&eacute;xico</span></p>
-              <ul>
-                <li class="">Infraestructura</li>
-                <li class="">Solidez</li>
-                <li class="">Confiabilidad</li>
-                <li class="">Profesionalismo</li>
-              </ul>
-              <p class="">Caracter&iacute;sticas que hacen de Grupo NAFA una empresa l&iacute;der en la industria de los pl&aacute;sticos en la Rep&uacute;blica Mexicana, con 40 años de experiencia y de servicio al mercado.<a href="#" class="read_more"> Leer m&aacute;s</a><p/>
-              <div class="more_text">
-                <p>Nuestros productos responden a normas estrictas de calidad, confiabilidad, durabilidad y le ofrecen soluciones perfectamente adaptadas a su necesidades a precios competitivos.</p>
-                <p>Nuestro Grupo utiliza un alto porcentaje de sus recursos financieros a la creaci&oacute;n de nuevos productos y a mejorar constantemente los ya existentes.</p>
-                <p>Con una fuerte capacidad Grupo NAFA es una de las empresas manufactureras de pel&iacute;culas de pl&aacute;stico m&aacute;s importantes de Latinoam&eacute;rica, confiriendo asistencia t&eacute;cnica y teniendo un posicionamiento superior en industrias y segmentos de alto potencial.</p>
-                <p>Extensi&oacute;n geogr&aacute;fica internacional, amplia gama de productos, alta percepci&oacute;n de marca e importante valor agregado, son algunas de nuestras ventajas competitivas.</p>
-                <p>Las tres unidades de negocio que conforman al Grupo enfocadas al servicio en distribuci&oacute;n y ventas son:</p>
-                <ul>
-                  <li class=""> Marna-Pl&aacute;stica: <span class="">Fabricaci&oacute;n de pel&iacute;culas pl&aacute;sticas.</span></li>
-                  <li class=""> Marna-Tak: <span class="">Fabricaci&oacute;n de l&iacute;neas de adhesivos</span></li>
-                  <li class="">Forramex: <span class="">Manufactura de productos de consumo</span></li>
-                </ul>
-              </div>
-              <h2>Nosotros:</h2>
-                <div id="owl-example" class="owl-carousel center">
-                    <div>
-                      <img src="img/1.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/2.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/3.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/4.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/5.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/6.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/7.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/8.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/9.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/10.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/11.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/12.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/13.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/14.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/15.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/16.jpg" alt="Nosotros" />
-                    </div>
-                    <div>
-                      <img src="img/17.jpg" alt="Nosotros" />
-                    </div> 
-                </div>
-          </div>
-        </div>
-      </div>     
     </section>
 
       <section class="row" id="contacto" data-anchor="contacto">
-        <h3>Ponte en contacto con nosotros</h3>
+        <h2>Ponte en contacto con nosotros</h2>
           <div class="large-6 medium-6 small-12 columns">
             <form data-abide class="cmxform" id="commentForm" method="post" action="verify.php" novalidate="novalidate">
               <div class="name-field">
@@ -235,11 +150,11 @@
               <i class="step fi-print size-20"> Fax <a href="fax: +52 55 58 58 8251"><p>55 5858 8251</p></a></i>
             </div>
           </div>
-          <div class="large-12 columns flex-video">
+          <div class="large-10 large-centered medium-10 medium-centered small-11 small-centered columns center mb16">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60220.297505636554!2d-98.971539!3d19.37917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7e09ee6413d%3A0xa0451d707488d2f7!2sGrupo+Nafa!5e0!3m2!1sen!2s!4v1420581935968" width="800" height="400" frameborder="0" style="border:0"></iframe>
           </div>
       </section>  
-    </div>
+  </div>
 
     <footer>
       <div class="row">
@@ -259,7 +174,7 @@
     <script type='text/javascript' src="js/jquery.fancybox.js"></script>
     <script type='text/javascript' src="js/scripts.js"></script>
     <script type='text/javascript' src="js/validate.js"></script>
-    <script type='text/javascript' src="https://www.google.com/recaptcha/api.js"></script>
+    <script type='text/javascript' src="https://www.google.com/recaptcha/api.js?hl=en"></script>
     <script>
       $(document).foundation();
     </script>

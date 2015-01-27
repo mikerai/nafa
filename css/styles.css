@@ -273,8 +273,16 @@ textarea {
 	padding-right: 0.9375rem;
 }
 
+.pt1 {
+	padding-top: 1%;
+}
+
 .pt4 {
 	padding-top: 4%;
+}
+
+.pt6 {
+	padding-top: 6%;
 }
 
 /* Image aligh hack */
@@ -1091,7 +1099,7 @@ div.controls > button + label{
 		margin: 0;
 	}
 
-	.pt4, .pt12, .pt30 {
+	.pt1, .pt4, .pt6, .pt12, .pt30 {
 		padding-top: 0;
 	}
 }
