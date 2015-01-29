@@ -4,7 +4,7 @@
 
 /* rgb(8, 55, 19); */
 
-.panel h3 {
+.panel h2 {
 	color: rgb(8,55,19);
 }
 
@@ -13,6 +13,59 @@ p.nafa a {
 }
 
 /* Colors */
+
+.clr1, .clr2, .clr3, .clr4, .clr5, .clr6, .clr7, .clr8, .clr9, .clr10, .clr11, .clr12 {
+	width: 30px;
+	height: 30px;
+}
+
+.clr1 {
+	background-color: rgb(255, 255, 0);
+}
+
+.clr2 {
+	background-color: rgb(255, 0, 0);
+}
+
+.clr3 {
+	background-color: rgb(255, 153, 204);
+}
+
+.clr4 {
+	background-color: rgb(255, 102, 0);
+}
+
+.clr5 {
+	background-color: rgb(102, 51, 153);
+}
+
+.clr6 {
+	background-color: rgb(51, 204, 0);
+}
+
+.clr7 {
+	background-color: rgb(0, 153, 255);
+}
+
+.clr8 {
+	background-color: rgb(0, 0, 102);
+}
+
+.clr9 {
+	background-color: rgb(102, 51, 0);
+}
+
+.clr10 {
+	background-color: rgb(0, 0, 0);
+}
+
+.clr11 {
+	background-color: rgb(255, 255, 204);
+}
+
+.clr12 {
+	background-color: rgb(153, 153, 153);
+}
 
 body {
 	background-color: rgb(207,222,92);
@@ -41,9 +94,12 @@ li {
     content: '\2022';
 }
 
-section#quienes h3 {
+h1, section#quienes div.item h2, section#quienes h3 {
 	color: rgb(8,55,19);
 	font-weight: 700;
+}
+
+section#quienes h3 {
 	text-align: center;
 }
 
