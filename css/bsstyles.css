@@ -4,7 +4,7 @@
 
 /* rgb(8, 55, 19); */
 
-.panel h2 {
+.panel h2, .panel h3 {
 	color: rgb(8,55,19);
 }
 
