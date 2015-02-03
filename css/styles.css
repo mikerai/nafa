@@ -387,6 +387,21 @@ footer {
 	left: 0;
 }
 
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background: rgb(255,255,255);
+	box-shadow: 1px 1px 55px #888888;
+	border-radius: 25px;
+}
+
+.accordion .accordion-navigation, .accordion dd {
+	margin-bottom: 1rem !important;
+}
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+	background: #e8e8e8;
+	box-shadow: 0 0 0 rgb(255,255,255);
+}
+
 /* 
  * 	Core Owl Carousel CSS File
  *	v1.3.3
