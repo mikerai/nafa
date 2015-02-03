@@ -287,6 +287,10 @@ textarea {
 	padding-top: 6%;
 }
 
+.ptb16 {
+	padding: 16% 0 !important;
+}
+
 /* Image aligh hack */
 
 .pt12 {

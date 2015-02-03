@@ -226,3 +226,9 @@ $(document).ready(function() {
     });
 
 });
+
+$(function () {
+    $('a.telaClick').click(function (e) {
+        $('div#panel1a').addClass('ptb16',2000);                
+    });
+});
