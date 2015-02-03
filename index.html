@@ -77,7 +77,63 @@
       	<div class="panel">
 	        <h2>Nuestros productos</h2>
 	        <p>Contamos con cinco divisiones especializadas donde seguro encontrar&aacute;s el producto que necesitas.</p>
-          <div class="row ">
+          <div class="row">
+            <div class="large-6 medium-6 small-12 columns center">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-navigation">
+                  <a href="#panel1a"><p><img src="img/hogar-thumb.png" alt=" Productos de consumo para el hogar" /></p> 
+                    <p>Hogar</p></a>
+                  <div id="panel1a" class="content">
+                    <p><a onclick="location.href='forramex.html'"><img src="img/forramex-logo.png" alt="Productos para el hogar" /></a></p>
+                    <p>Dedicada a la manufactura de productos de un extenso surtido de productos para el hogar, de uso industrial y de art&iacute;culos publicitarios.</p>
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel2a"><p><img src="img/peliculas-thumb.png" alt="Pel&iacute;culas Pl&aacute;sticas" /></p> 
+                    <p>Pel&iacute;culas Pl&aacute;sticas</p></a>
+                  <div id="panel2a" class="content">
+                    <p><a onclick="location.href='marna.html'"><img src="img/marna-logo.png" alt="Marna Pl&aacute;stica" /></a></p>
+                    <p>Fabricante de pel&iacute;culas pl&aacute;sticas de diversas caracter&iacute;sticas para utilizarlas en una multitud de aplicaciones en todo el hogar.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="large-6 medium-6 small-12 columns center">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-navigation">
+                  <a href="#panel1b"><p><img src="img/reciclar-thumb.png" alt="" /></p> 
+                    <p>Tela Ecol&oacute;gica</p></a>
+                  <div id="panel1b" class="content">
+                    <p><a onclick="location.href='non-woven-solutions.html'"><img src="img/non-wovens-solutions-logo.png" alt="Non Woven Solutions" /></a></p>
+                    <p>En compromiso con el cuidado y conservaci&oacute;n del medio ambiente <b>Grupo NAFA</b> crea la l&iacute;nea de fabricaci&oacute;n y comercializaci&oacute;n de telas no tejidas Spundbond de Polipropileno; teniendo as&iacute;, una gran variedad de pesos base, anchos y colores; cumpliendo la necesidad en alto crecimiento de nuestros clientes</p>
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel2b"><p><img src="img/bolsa-reciclada-thumb.png" alt="" /></p> 
+                    <p>Bolsas Ecol&oacute;gicas</p></a>
+                  <div id="panel2b" class="content">
+                    <p><a onclick="location.href='bag-solutions.html'"><img src="img/logo-BagSolutions.png" alt="Bag Solutions" /></a></p>
+                    <p>Es una l&iacute;nea de bolsas Publicitarias Ecol&oacute;gicas y Reutilizables de "Non Woven", hechas 100% de Polipropileno. Ayudando con esto al medio ambiente, haciendo de nuestra labor una gran contribuci&oacute;n para la sustentabilidad de nuestro planeta.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt16">
+            <div class="large-6 large-centered medium-6 medium-centered small-12 small-centered columns center">
+              <ul class="accordion" data-accordion>
+                <li class="accordion-navigation">
+                  <a href="#panel1c"><p><img src="img/publi-thumb.png" alt="" /></p> 
+                    <p>Publicidad</p></a>
+                    <div id="panel1c" class="content">
+                      <p><a onclick="location.href='productos-nafa.html'"><img src="img/NAFA-logo.png" alt="Productos publicitarios de Non-Woven y PVC" /></a></p>
+                      <p>Productos publicitarios de Non-Woven y PVC</p>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--<div class="row ">
             <div class="large-6 medium-6 small-12 columns">
               <p><a onclick="location.href='forramex.html'"><img class="pt30" src="img/forramex-logo.png" alt="Productos para el hogar" /></a></p>
             </div>
@@ -97,7 +153,7 @@
             <div class="large-6 large-centered medium-6 medium-centered small-12 columns">
               <p class="center"><a onclick="location.href='non-woven-solutions.html'"><img class="pt12" src="img/non-wovens-solutions-logo.png" alt="Non Woven Solutions" /></a></p>
             </div>
-          </div>
+          </div> -->
           <!--<div class="row mtb16">
             <div class="large-12 medium-12 small-12 columns">
               <h3>Visita nuestra p&aacute;gina de Bag Solutions</h3>
@@ -166,12 +222,26 @@
     <footer>
       <div class="row">
         <div class="large-12 columns center">
-          <p>&#174; 2015. Todos los Derechos Reservados. Grupo NAFA</p>
+          <p>&#174; 2015. Todos los Derechos Reservados. <b>Grupo NAFA</b></p>
         </div>
       </div>
     </footer>
 
-    <script type='text/javascript' src="js/js.min.js"></script>
-    <script type='text/javascript' src="https://www.google.com/recaptcha/api.js?hl=es"></script>
+    <script type='text/javascript' src="js/vendor/modernizr.js"></script>
+    <script type='text/javascript' src="js/vendor/jquery.js"></script>
+    <script type='text/javascript' src="/js/vendor/fastclick.js"></script>
+    <script type='text/javascript' src="js/foundation.js"></script>
+    <script type='text/javascript' src="js/foundation/foundation.topbar.js"></script>
+    <script type='text/javascript' src="js/foundation/foundation.abide.js"></script>
+    <script type='text/javascript' src="js/foundation/foundation.accordion.js"></script>
+    <script type='text/javascript' src="js/jquery.mixitup.js"></script>
+    <script type='text/javascript' src="js/jquery.fancybox.js"></script>
+    <script type='text/javascript' src="js/owl.carousel.js"></script>
+    <script type='text/javascript' src="js/scripts.js"></script>
+    <script type='text/javascript' src="js/validate.js"></script>
+    <script type='text/javascript' src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
