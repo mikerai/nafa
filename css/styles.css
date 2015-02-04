@@ -291,6 +291,10 @@ textarea {
 	padding: 16% 0 !important;
 }
 
+.hf {
+	height: 373px;
+}
+
 /* Image aligh hack */
 
 .pt12 {

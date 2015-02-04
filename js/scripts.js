@@ -227,8 +227,25 @@ $(document).ready(function() {
 
 });
 
+/* 
+
 $(function () {
-    $('a.telaClick').click(function (e) {
-        $('div#panel1a').addClass('ptb16',2000);                
+    $('a.tC').click(function (e) {
+        $('div#panel1a').addClass('hf');                
     });
+    if ($('div#panel1b').is(':visible') == false){
+      $('div#panel1a').removeClass('hf');
+    }
+});
+
+*/
+
+$('a.tC').on('click', function() {
+    if ($('div#panel1b').is(':visible') == true){
+      console.log('Whatever');
+      $('div#panel1a').removeClass('hf');
+    }
+    else {
+      $('div#panel1a').addClass('hf');
+    }
 });
