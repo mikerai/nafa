@@ -238,7 +238,7 @@ $(function () {
     }
 });
 
-*/
+
 
 $('a.tC').on('click', function() {
     if ($('div#panel1b').is(':visible') == true){
@@ -249,3 +249,5 @@ $('a.tC').on('click', function() {
       $('div#panel1a').addClass('hf');
     }
 });
+
+*/
