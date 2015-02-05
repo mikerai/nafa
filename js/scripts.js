@@ -36,6 +36,8 @@ $('a').click(function(){
 
 }); */
 
+// div.mix.category-1[data-myorder="$"]*47>a.fancybox[rel="gallery1"][href="img/bolsas-con-logo/$.png"][title=""]>img[src="img/bolsas-con-logo/$.png"]
+
 $(function(){
   $('i.step.fi-align-justify').click(function(e){
       e.preventDefault();
@@ -172,7 +174,24 @@ $(document).ready(function () {
 });
 
 $(function(){
-  $('#Container').mixItUp();
+  $('#Container').mixItUp({
+    pagination: {
+      limit: 10,
+      loop: true,
+      generatePagers: true,
+      maxPagers: 10,
+      pagerClass: '',
+      prevButtonHTML: '«',
+      nextButtonHTML: '»'
+    },
+    controls: {
+      enable: true
+    },
+    selectors: {
+      pagersWrapper: '.pager-list',
+      pager: '.pager'
+    }
+  });
 });
 
 //FancyBox
