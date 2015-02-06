@@ -176,13 +176,13 @@ $(document).ready(function () {
 $(function(){
   $('#Container').mixItUp({
     pagination: {
-      limit: 10,
-      loop: true,
+      limit: 12,
+      loop: false,
       generatePagers: true,
-      maxPagers: 10,
+      maxPagers: 3,
       pagerClass: '',
-      prevButtonHTML: '«',
-      nextButtonHTML: '»'
+      prevButtonHTML: '<',
+      nextButtonHTML: '>'
     },
     controls: {
       enable: true

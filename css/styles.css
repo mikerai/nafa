@@ -200,14 +200,6 @@ div.disney {
 	padding: 0;
 }
 
-	div.disney p {
-		color: rgb(255,255,255);
-		text-shadow: rgb(255,255,255) 0px 0px 30px;
-		font-size: 2.75rem;
-		position: relative;
-		top: 120px;
-	}
-
 /* Mobile Menu styles */
 
 nav a {
@@ -375,10 +367,8 @@ div.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 	border-style: none;
 	border-width: 0;
 	border-color: transparent;
-	margin-bottom: 1.25rem;
-	padding: 1.25rem;
 	background: transparent;
-	color: #333333;
+	padding-top: 0.5rem;
 }
 
 label small {
@@ -747,7 +737,7 @@ footer {
 /* Mix it up */
 
 .controls{
-  padding: 2%;
+  padding: 1%;
   background: rgb(255,255,255);
   color: #eeeeee;
 }
@@ -832,6 +822,19 @@ div.controls > button + label{
   padding-top: 60%;
 }
 
+.mix p {
+	text-align: center;
+	margin-bottom: 0.25rem;
+}
+
+	.mix p.title {
+		color: green;
+	}
+
+	.mix p.desc {
+		color:#666666;
+	}
+
 @media all and (min-width: 420px){
   .container .mix,
   .container .gap{
@@ -844,6 +847,51 @@ div.controls > button + label{
   .container .gap{
     width: 23.5%;
   }
+}
+
+/* Pagination */
+
+.pager {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px 25px;
+	background: white;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+span.pager.page-number {
+	line-height: 1;
+	background: rgb(255,255,255);
+	padding: 1em 1em;
+	margin: 0;
+	min-width: 40px;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	color: #666666;
+	border: 0 none;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	display: inline-block;
+	border-radius: 2px;
+	-webkit-appearance: none;
+}
+
+span.pager.page-prev, span.pager.page-next {
+	color: rgb(8,55,19);
+}
+
+span.pager.disabled {
+	visibility: hidden;
+}
+
+span.pager.active {
+	background: rgb(207,222,92);
+	border-color: rgb(8,55,19);
+	color:rgb(255,255,255);
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
@@ -1130,11 +1178,6 @@ div.controls > button + label{
 		min-height: 346px;
 	}
 
-		div.disney p {
-			font-size: 2rem;
-			top: 100px;
-		}
-
 }
 
 @media only screen and (max-width: 40.063em) { 
@@ -1169,9 +1212,4 @@ div.controls > button + label{
 		background: url('licencia-disney-m.png') top center no-repeat;
 		min-height: 124px;
 	}
-
-		div.disney p {
-			font-size: 1rem;
-			top: 15px;
-		}
 }
