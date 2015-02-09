@@ -103,6 +103,23 @@ section#quienes h3 {
 	text-align: center;
 }
 
+.reveal-modal p {
+	text-align: center;
+	margin-bottom: 0.25rem;
+}
+
+	p.title {
+		color: green;
+	}
+
+	p.desc {
+		color:#666666;
+	}
+
+		p.title, p.desc {
+			margin-bottom: 0;
+		}
+
 footer {
 	background-color: rgb(8,55,19);
 }
