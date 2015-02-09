@@ -202,6 +202,8 @@ div.disney {
 
 /* Mobile Menu styles */
 
+nav {display: none;}
+
 nav a {
 	color:rgb(234, 107, 0);
 	font-weight: 700;
@@ -229,6 +231,7 @@ nav ul {
 }
 
 	nav ul li {
+		font-size: 1.25rem;
 		padding: 1rem 0;
 		margin: 0;
 	}
@@ -793,13 +796,18 @@ div.controls > button + label{
 }
 
 .container .mix{
-  text-align: left;
+  text-align: center; /* originally left*/
   background: transparent;
   margin-bottom: 2%;
   display: none;
+  vertical-align: middle;
 }
 
-/*.container .mix.category-1{
+	/*.container .mix img {
+		max-height: 200px;
+	}
+
+.container .mix.category-1{
   border-top: 2px solid limegreen;
 }
 
@@ -1182,6 +1190,8 @@ span.pager.active {
 
 @media only screen and (max-width: 40.063em) { 
 	
+	section#productos ul {margin-left: 1rem;}
+
 	ul {margin-left: 0;}
 
 	li {padding-left: 0;};
