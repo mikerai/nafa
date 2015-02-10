@@ -120,6 +120,10 @@ section#quienes h3 {
 			margin-bottom: 0;
 		}
 
+.mix p {
+	margin-bottom: 0;
+}
+
 footer {
 	background-color: rgb(8,55,19);
 }
