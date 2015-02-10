@@ -1169,8 +1169,8 @@ span.pager.active {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 
 	div.disney {
-		background: url('licencia-disney-t.png') top center no-repeat;
-		min-height: 346px;
+		background: url('disney-t.png') top center no-repeat;
+		min-height: 393px;
 	}
 
 }
@@ -1206,7 +1206,11 @@ span.pager.active {
 	}
 
 	div.disney {
-		background: url('licencia-disney-m.png') top center no-repeat;
-		min-height: 124px;
+		background: url('disney-m.png') top center no-repeat;
+		min-height: 141px;
 	}
+
+		div.disney h2 {
+			font-size: 1rem;
+		}
 }

@@ -19,6 +19,14 @@ body {
 	background: url(licencia-disney.png) fixed top center repeat;
 }
 
+body { 
+	background: url('bg.png') no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} 
+
 #main {
 	background-color: #ffffff;	
 }
@@ -42,10 +50,9 @@ li {
     content: '\2022';
 }
 
-section#quienes h3 {
-	color: rgb(160,45,118);
-	font-weight: 700;
-	text-align: center;
+span.pager.active {
+	background: rgb(238,51,47);
+	border-color: rgb(238,51,47);
 }
 
 footer {
