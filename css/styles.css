@@ -341,10 +341,6 @@ p.success {
 
 /* Foundation customizations and fixes */
 
-.row {
-	max-width: 83.5rem;
-}
-
 .row .row {
 	width: 100%;
 	margin-left: 0;
@@ -1170,13 +1166,18 @@ span.pager.active {
 
 /* Customized media queries */
 
+@media only screen and (min-width: 80.063em) and (max-width: 120em) { 
+	.row {
+		max-width: 80rem;
+	}
+} 
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 
 	div.disney {
 		background: url('disney-t.png') top center no-repeat;
 		min-height: 393px;
 	}
-
 }
 
 @media only screen and (max-width: 40.063em) { 
