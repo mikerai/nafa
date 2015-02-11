@@ -22,10 +22,6 @@ body {
 	background-size: cover;
 } 
 
-#main {
-	background-color: transparent;	
-}
-
 .controls {
 	background: rgba(255,255,255,0.8);
 }

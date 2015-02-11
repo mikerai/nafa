@@ -341,6 +341,10 @@ p.success {
 
 /* Foundation customizations and fixes */
 
+.row {
+	max-width: 83.5rem;
+}
+
 .row .row {
 	width: 100%;
 	margin-left: 0;
