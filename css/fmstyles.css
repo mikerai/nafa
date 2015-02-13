@@ -80,3 +80,9 @@ div.controls > button.active {
 div.controls > button {
 	color: rgb(255,255,255);
 }
+
+span.pager.active {
+	background: rgb(19,149,212);
+	border-color: rgb(9,66,146);
+	color:rgb(255,255,255);
+}
