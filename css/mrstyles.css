@@ -70,13 +70,18 @@ div.fixed.center.hide-for-medium-up {
 }
 
 i.step.fi-align-justify {
-	color:  rgb(42,146,37);;
+	color:  rgb(42,146,37);
 }
 
 div.controls > button.active {
-	background: rgb(42,146,37);;
+	background: rgb(42,146,37);
 }
 
 div.controls > button {
 	color: rgb(255,255,255);
+}
+
+span.pager.active {
+	background: rgb(42,146,37);
+	border-color: rgb(160,45,118);
 }

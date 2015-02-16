@@ -1,21 +1,13 @@
-/* Marena styling */
+/* Marnatak styling */
 
-/* rgb(20,167,213); Blue*/
+/* rgb(207,0,42); Red */
 
-/* rgb(157,0,108); Purple*/
-
-.panel h3 {
-	color: rgb(157,0,108);
-}
-
-p.nafa a {
-	color: rgb(234,107,0);
-}
+/* rgb(25,165,59); Green */
 
 /* Colors */
 
 body {
-	background-color: rgb(20,167,213);
+	background-color: rgb(207,0,42);
 }
 
 #main {
@@ -23,46 +15,45 @@ body {
 }
 
 .menu {
-	background-color: rgba(20,167,213,0.85);
+	background-color: rgba(207,0,42,0.85);
 }
 
 div.bh.active {
-	border-bottom: 2px solid rgb(20,167,213);;
+	border-bottom: 2px solid rgb(207,0,42);
 	background-color: rgb(255,255,255);
 }
 
 	div.bh.active a {
-		color: rgb(20,167,213);;
+		color: rgb(207,0,42);;
 	}
 
 li {
 	padding-left: 1rem;
-    color: rgb(157,0,108);
+    color: rgb(25,165,59);
     content: '\2022';
 }
 
-section#quienes h3 {
-	color: rgb(157,0,108);
-	font-weight: 700;
-	text-align: center;
+span.pager.active {
+	background: rgb(207,0,42);
+	border-color: rgb(25,165,59);
 }
 
 footer {
-	background-color: rgb(157,0,108);
+	background-color: rgb(25,165,59);
 }
 
 /* Mobile Menu styles */
 
 nav a {
-	color:rgb(157,0,108);
+	color:rgb(25,165,59);
 }
 
 button.menuB {
-	background-color: rgb(20,167,213);;
+	background-color: rgb(207,0,42);
 }
 
 	button.menuB:hover, button.menuB:focus {
-		background-color: rgba(20,167,213,0.85);
+		background-color: rgba(207,0,42,0.85);
 	}
 
 div.fixed.center.hide-for-medium-up {
@@ -70,11 +61,11 @@ div.fixed.center.hide-for-medium-up {
 }
 
 i.step.fi-align-justify {
-	color:  rgb(20,167,213);;
+	color:  rgb(207,0,42);
 }
 
 div.controls > button.active {
-	background: rgb(20,167,213);;
+	background: rgb(207,0,42);
 }
 
 div.controls > button {
