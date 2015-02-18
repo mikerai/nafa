@@ -21,6 +21,7 @@
           <nav>
             <ul>
               <li><a onclick="location.href='index-en.html'"><img  src="img/Flag_of_the_United_States_thumb.png" alt="Flag of the United States used to change site language" /></a></li>
+              <li><a data-scroll="inicio" class="" href="#">Inicio</a></li>
               <li><a data-scroll="productos" class="" href="#">Productos</a></li>
               <li><a data-scroll="contacto" class="" href="#">Contacto</a></li>
               <li><a onclick="location.href='nosotros.html'">Quienes Somos</a></li>
@@ -48,233 +49,239 @@
 
     <div class="row contain-to-grid sticky hide-for-small">
       <div class="large-12 medium-12 columns menu center lh-m" id="top-menu" data-topbar role="navigation" data-options="">
-        <div class="large-4 medium-4 columns bh">
+        <div class="large-3 medium-3 columns bh">
+          <a data-scroll="inicio" href="#" class="transparent">Inicio</a>
+        </div>
+        <div class="large-3 medium-3 columns bh">
           <a data-scroll="productos" href="#" class="transparent">Productos</a>
         </div>
-        <div class="large-4 medium-4 columns bh">
+        <div class="large-3 medium-3 columns bh">
           <a data-scroll="contacto" href="#" class="transparent">Contacto</a>
         </div>
-        <div class="large-4 medium-4 columns bh">
+        <div class="large-3 medium-3 columns bh">
           <a style="cursor: pointer;" onclick="location.href='nosotros.html'" class="transparent">Quienes Somos</a>
         </div>
       </div>
     </div>
     
-    <section class="row" id="productos" data-anchor="productos">
-      <div class="large-12 columns">
-  	       <div class="row panel">
-              <div class="large-12 medium-12 small-12 columns controls center">
-                <label>Filtrar: <br></label>
-              </div> 
-              <div class="large-12 medium-12 small-12 columns controls center">
-                <button class="filter" data-filter="all">Todas</button>
-                <button class="filter" data-filter=".category-1">Adhesivos</button>
-                <button class="filter" data-filter=".category-2">Cortinas</button>
-                <button class="filter" data-filter=".category-3">Manteles</button>
-                <button class="filter" data-filter=".category-4">Tapetes</button>
-                <button class="filter" data-filter=".category-5">Mandiles Infantiles</button>
-              </div>
-              <div class="row">
-                <div class="large-12 medium-12 small-12 columns controls center">
-                  <label>Ordenar: <br></label>
-                </div>
-                <div class="large-12 medium-12 small-12 columns controls center">         
-                  <button class="sort" data-sort="myorder:asc">Ascendente</button>
-                  <button class="sort" data-sort="myorder:desc">Descendente</button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="pager-list center">
-                  <!-- Pagination buttons will be generated here -->
-                </div>
-              </div>
-          </div>
-          <div class="row">
-            <div class="large-12 medium-12 small-12 columns container" id="Container">
-              <!--div.mix.category-1[data-myorder="$"]*13>a[href="#"][data-reveal-id="myModal$"]>img[src="img/disney/$.jpg"]-->
-              <div class="mix category-1" data-myorder="1"><a href="#" data-reveal-id="myModal1"><img src="img/disney/adhesivo-1.jpg" alt=""></a></div>
-              <div class="mix category-1" data-myorder="2"><a href="#" data-reveal-id="myModal2"><img src="img/disney/adhesivo-2.jpg" alt=""></a></div>
-              <div class="mix category-1" data-myorder="3"><a href="#" data-reveal-id="myModal3"><img src="img/disney/adhesivo-3.jpg" alt=""></a></div>
-
-              <div class="mix category-2" data-myorder="4"><a href="#" data-reveal-id="myModal4"><img src="img/disney/cortina-1.jpg" alt=""></a></div>
-              <div class="mix category-2" data-myorder="5"><a href="#" data-reveal-id="myModal5"><img src="img/disney/cortina-2.jpg" alt=""></a></div>
-              <div class="mix category-2" data-myorder="6"><a href="#" data-reveal-id="myModal6"><img src="img/disney/cortina-3.jpg" alt=""></a></div>
-              <div class="mix category-2" data-myorder="7"><a href="#" data-reveal-id="myModal7"><img src="img/disney/cortina-4.jpg" alt=""></a></div>
-              <div class="mix category-2" data-myorder="8"><a href="#" data-reveal-id="myModal8"><img src="img/disney/cortina-5.jpg" alt=""></a></div>
-              <div class="mix category-2" data-myorder="9"><a href="#" data-reveal-id="myModal9"><img src="img/disney/cortina-6.jpg" alt=""></a></div>
-
-              <div class="mix category-3" data-myorder="10"><a href="#" data-reveal-id="myModal10"><img src="img/disney/mantel-1.png" alt=""></a></div>
-              <div class="mix category-3" data-myorder="11"><a href="#" data-reveal-id="myModal11"><img src="img/disney/mantel-2.png" alt=""></a></div>
-              <div class="mix category-3" data-myorder="12"><a href="#" data-reveal-id="myModal12"><img src="img/disney/mantel-3.png" alt=""></a></div>
-              <div class="mix category-3" data-myorder="13"><a href="#" data-reveal-id="myModal13"><img src="img/disney/mantel-4.png" alt=""></a></div>
-              <div class="mix category-3" data-myorder="14"><a href="#" data-reveal-id="myModal14"><img src="img/disney/mantel-5.png" alt=""></a></div>
-              <div class="mix category-3" data-myorder="15"><a href="#" data-reveal-id="myModal15"><img src="img/disney/mantel-6.png" alt=""></a></div>
-
-              <div class="mix category-4" data-myorder="16"><a href="#" data-reveal-id="myModal16"><img src="img/disney/tapete-1.jpg" alt=""></a></div>
-              <div class="mix category-4" data-myorder="17"><a href="#" data-reveal-id="myModal17"><img src="img/disney/tapete-2.jpg" alt=""></a></div>
-              <div class="mix category-4" data-myorder="18"><a href="#" data-reveal-id="myModal18"><img src="img/disney/tapete-3.png" alt=""></a></div>
-              <div class="mix category-4" data-myorder="19"><a href="#" data-reveal-id="myModal19"><img src="img/disney/tapete-4.png" alt=""></a></div>
-              <div class="mix category-4" data-myorder="20"><a href="#" data-reveal-id="myModal20"><img src="img/disney/tapete-5.png" alt=""></a></div>
-
-              <div class="center small reveal-modal" data-reveal  id="myModal1">
-                <img src="img/disney/adhesivo-1.jpg" alt="">
-                <p class="title">Adhesivo para pared</p>
-                <p class="desc">Modelo Cars</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal2">
-                <img src="img/disney/adhesivo-2.jpg" alt="">
-                <p class="title">Adhesivo para pared</p>
-                <p class="desc">Modelo Princesas</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal3">
-                <img src="img/disney/adhesivo-3.jpg" alt="">
-                <p class="title">Adhesivo para pared</p>
-                <p class="desc">Modelo Winnie the Pooh</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal4">
-                <img src="img/disney/cortina-1.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Winnie the Pooh</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal5">
-                <img src="img/disney/cortina-2.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Cars</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal6">
-                <img src="img/disney/cortina-3.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Minnie Mouse</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal7">
-                <img src="img/disney/cortina-4.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Princesas 1</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal8">
-                <img src="img/disney/cortina-5.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Princesas 2</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal9">
-                <img src="img/disney/cortina-6.jpg" alt="">
-                <p class="title">Cortina para ba&ntilde;o</p>
-                <p class="desc">Modelo Princesas 3</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal10">
-                <img src="img/disney/mantel-1.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Mickey, Donald y Pluto</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal11">
-                <img src="img/disney/mantel-2.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Princesas</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal12">
-                <img src="img/disney/mantel-3.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Fairies 1</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal13">
-                <img src="img/disney/mantel-4.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Cars</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal14">
-                <img src="img/disney/mantel-5.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Fairies 2</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal15">
-                <img src="img/disney/mantel-6.png" alt="">
-                <p class="title">Manteles</p>
-                <p class="desc">Modelo Buzz</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal16">
-                <img src="img/disney/tapete-1.jpg" alt="">
-                <p class="title">Tapetes</p>
-                <p class="desc">Modelo Princesas 1</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal17">
-                <img src="img/disney/tapete-2.jpg" alt="">
-                <p class="title">Tapetes</p>
-                <p class="desc">Modelo Princesas 2</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal18">
-                <img src="img/disney/tapete-3.png" alt="">
-                <p class="title">Tapetes</p>
-                <p class="desc">Modelo Princesas 3</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal19">
-                <img src="img/disney/tapete-4.png" alt="">
-                <p class="title">Tapetes</p>
-                <p class="desc">Modelo Princesas 4</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-              <div class="center small reveal-modal" data-reveal  id="myModal20">
-                <img src="img/disney/tapete-5.png" alt="">
-                <p class="title">Tapetes</p>
-                <p class="desc">Modelo Cars</p>
-                <a href="" class="close-reveal-modal">&#215;</a>
-              </div>
-
-              <div class="mix category-5" data-myorder="50"><a href="img/forramex/mandiles/3.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/3.png" alt=""></a></div>
-              <div class="mix category-5" data-myorder="51"><a href="img/forramex/mandiles/4.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/4.png" alt=""></a></div>
-              <div class="mix category-5" data-myorder="52"><a href="img/forramex/mandiles/5.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/5.png" alt=""></a></div>
-              <div class="mix category-5" data-myorder="53"><a href="img/forramex/mandiles/6.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/6.png" alt=""></a></div>
-
-            </div>
-          </div>
+    <section class="row" id="inicio" data-anchor="inicio">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns mb16">
+          <p class="center pt1"><img src="css/licencia-disney-t.png" alt="Contamos con Licencia Disney"></p>
+          <p><b>Grupo NAFA</b> cuenta con licencia Disney &copy; y pone a su disposici&oacute;n los siguientes productos:</p>
+            <ul>
+              <li>Adhesivos</li>
+              <li>Cortinas para ba&ntilde;o</li>
+              <li>Manteles</li>
+              <li>Tapetes</li>
+              <li>Mandiles infantiles</li>
+            </ul>
+        </div>
       </div>
-        <div class="row">
-          <h2 class="center">Visita nuestros otros sitios</h2>
-          <div class="large-6 large-centered medium-6 medium-centered small-12 columns center">
-            <p><a onclick="location.href='index.html'"><img style="cursor: pointer;" src="img/NAFA-logo.png" alt="Logo de Grupo NAFA" /></a></p>
-          </div>
-          <div class="large-6 medium-6 small-12 columns center">
-            <p><a onclick="location.href='bag-solutions.html'"><img style="cursor: pointer;" src="img/logo-BagSolutions.png" alt="Logo de Bag Solutions" /></a></p>
-          </div>
-          <div class="large-6 medium-6 small-12 columns center">
-            <p><a onclick="location.href='marna.html'"><img style="cursor: pointer;" src="img/marna-logo.png" alt="Logo de Marna" /></a></p>
-          </div>
+    </section>
+    <section class="row" id="productos" data-anchor="productos">
+      <div class="large-12 medium-12 small-12 columns controls">
+        <label>Filtrar:</label>
+        <button class="filter" data-filter="all">Todas</button>
+        <button class="filter" data-filter=".category-1">Adhesivos</button>
+        <button class="filter" data-filter=".category-2">Cortinas</button>
+        <button class="filter" data-filter=".category-3">Manteles</button>
+        <button class="filter" data-filter=".category-4">Tapetes</button>
+        <button class="filter" data-filter=".category-5">Mandiles Infantiles</button>
+      </div>
+      <div class="row">
+        <div class="pager-list center">
+          <!-- Pagination buttons will be generated here -->
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 small-12 columns center">
-            <p><a onclick="location.href='non-woven-solutions.html'"><img style="cursor: pointer;" src="img/non-wovens-solutions-logo.png" alt="Logo de Non Woven Solutions" /></a></p>
+      </div>
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns container" id="Container">
+          <!--div.mix.category-1[data-myorder="$"]*13>a[href="#"][data-reveal-id="myModal$"]>img[src="img/disney/$.jpg"]-->
+          <div class="mix category-1" data-myorder="1"><a href="#" data-reveal-id="myModal1"><img src="img/disney/adhesivo-1.jpg" alt=""></a></div>
+          <div class="mix category-1" data-myorder="2"><a href="#" data-reveal-id="myModal2"><img src="img/disney/adhesivo-2.jpg" alt=""></a></div>
+          <div class="mix category-1" data-myorder="3"><a href="#" data-reveal-id="myModal3"><img src="img/disney/adhesivo-3.jpg" alt=""></a></div>
+
+          <div class="mix category-2" data-myorder="4"><a href="#" data-reveal-id="myModal4"><img src="img/disney/cortina-1.jpg" alt=""></a></div>
+          <div class="mix category-2" data-myorder="5"><a href="#" data-reveal-id="myModal5"><img src="img/disney/cortina-2.jpg" alt=""></a></div>
+          <div class="mix category-2" data-myorder="6"><a href="#" data-reveal-id="myModal6"><img src="img/disney/cortina-3.jpg" alt=""></a></div>
+          <div class="mix category-2" data-myorder="7"><a href="#" data-reveal-id="myModal7"><img src="img/disney/cortina-4.jpg" alt=""></a></div>
+          <div class="mix category-2" data-myorder="8"><a href="#" data-reveal-id="myModal8"><img src="img/disney/cortina-5.jpg" alt=""></a></div>
+          <div class="mix category-2" data-myorder="9"><a href="#" data-reveal-id="myModal9"><img src="img/disney/cortina-6.jpg" alt=""></a></div>
+
+          <div class="mix category-3" data-myorder="10"><a href="#" data-reveal-id="myModal10"><img src="img/disney/mantel-1.png" alt=""></a></div>
+          <div class="mix category-3" data-myorder="11"><a href="#" data-reveal-id="myModal11"><img src="img/disney/mantel-2.png" alt=""></a></div>
+          <div class="mix category-3" data-myorder="12"><a href="#" data-reveal-id="myModal12"><img src="img/disney/mantel-3.png" alt=""></a></div>
+          <div class="mix category-3" data-myorder="13"><a href="#" data-reveal-id="myModal13"><img src="img/disney/mantel-4.png" alt=""></a></div>
+          <div class="mix category-3" data-myorder="14"><a href="#" data-reveal-id="myModal14"><img src="img/disney/mantel-5.png" alt=""></a></div>
+          <div class="mix category-3" data-myorder="15"><a href="#" data-reveal-id="myModal15"><img src="img/disney/mantel-6.png" alt=""></a></div>
+
+          <div class="mix category-4" data-myorder="16"><a href="#" data-reveal-id="myModal16"><img src="img/disney/tapete-1.jpg" alt=""></a></div>
+          <div class="mix category-4" data-myorder="17"><a href="#" data-reveal-id="myModal17"><img src="img/disney/tapete-2.jpg" alt=""></a></div>
+          <div class="mix category-4" data-myorder="18"><a href="#" data-reveal-id="myModal18"><img src="img/disney/tapete-3.png" alt=""></a></div>
+          <div class="mix category-4" data-myorder="19"><a href="#" data-reveal-id="myModal19"><img src="img/disney/tapete-4.png" alt=""></a></div>
+          <div class="mix category-4" data-myorder="20"><a href="#" data-reveal-id="myModal20"><img src="img/disney/tapete-5.png" alt=""></a></div>
+
+          <div class="center small reveal-modal" data-reveal  id="myModal1">
+            <img src="img/disney/adhesivo-1.jpg" alt="">
+            <p class="title">Adhesivo para pared</p>
+            <p class="desc">Modelo Cars</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
           </div>
-          <div class="large-6 medium-6 small-12 columns center">
-            <p><a onclick="location.href='forramex.html'"><img style="cursor: pointer;" src="img/forramex-logo.png" alt="Logo de Forramex" /></a></p>
+          <div class="center small reveal-modal" data-reveal  id="myModal2">
+            <img src="img/disney/adhesivo-2.jpg" alt="">
+            <p class="title">Adhesivo para pared</p>
+            <p class="desc">Modelo Princesas</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
           </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal3">
+            <img src="img/disney/adhesivo-3.jpg" alt="">
+            <p class="title">Adhesivo para pared</p>
+            <p class="desc">Modelo Winnie the Pooh</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal4">
+            <img src="img/disney/cortina-1.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Winnie the Pooh</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal5">
+            <img src="img/disney/cortina-2.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Cars</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal6">
+            <img src="img/disney/cortina-3.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Minnie Mouse</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal7">
+            <img src="img/disney/cortina-4.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Princesas 1</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal8">
+            <img src="img/disney/cortina-5.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Princesas 2</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal9">
+            <img src="img/disney/cortina-6.jpg" alt="">
+            <p class="title">Cortina para ba&ntilde;o</p>
+            <p class="desc">Modelo Princesas 3</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal10">
+            <img src="img/disney/mantel-1.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Mickey, Donald y Pluto</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal11">
+            <img src="img/disney/mantel-2.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Princesas</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal12">
+            <img src="img/disney/mantel-3.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Fairies 1</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal13">
+            <img src="img/disney/mantel-4.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Cars</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal14">
+            <img src="img/disney/mantel-5.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Fairies 2</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal15">
+            <img src="img/disney/mantel-6.png" alt="">
+            <p class="title">Manteles</p>
+            <p class="desc">Modelo Buzz</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal16">
+            <img src="img/disney/tapete-1.jpg" alt="">
+            <p class="title">Tapetes</p>
+            <p class="desc">Modelo Princesas 1</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal17">
+            <img src="img/disney/tapete-2.jpg" alt="">
+            <p class="title">Tapetes</p>
+            <p class="desc">Modelo Princesas 2</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal18">
+            <img src="img/disney/tapete-3.png" alt="">
+            <p class="title">Tapetes</p>
+            <p class="desc">Modelo Princesas 3</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal19">
+            <img src="img/disney/tapete-4.png" alt="">
+            <p class="title">Tapetes</p>
+            <p class="desc">Modelo Princesas 4</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+          <div class="center small reveal-modal" data-reveal  id="myModal20">
+            <img src="img/disney/tapete-5.png" alt="">
+            <p class="title">Tapetes</p>
+            <p class="desc">Modelo Cars</p>
+            <a href="" class="close-reveal-modal">&#215;</a>
+          </div>
+
+          <div class="mix category-5" data-myorder="50"><a href="img/forramex/mandiles/3.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/3.png" alt=""></a></div>
+          <div class="mix category-5" data-myorder="51"><a href="img/forramex/mandiles/4.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/4.png" alt=""></a></div>
+          <div class="mix category-5" data-myorder="52"><a href="img/forramex/mandiles/5.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/5.png" alt=""></a></div>
+          <div class="mix category-5" data-myorder="53"><a href="img/forramex/mandiles/6.png" class="fancybox" rel="gallery5" title="Mandiles infantiles"><img src="img/forramex/mandiles/6.png" alt=""></a></div>
+
+          <div class="gap"></div>              
+          <div class="gap"></div>
+
         </div>
-        <div class="row">
-          <div class="large-6 large-centered medium-6 medium-centered small-12 columns center">
-            <p><a onclick="location.href='papeleria.html'"><img style="cursor: pointer;" src="img/marnatak-logo.png" alt="Logo de Marnatak" /></a></p>
-          </div>
+      </div>
+      <div class="row">
+        <h2 class="center">Visita nuestros otros sitios</h2>
+        <div class="large-6 medium-6 small-12 columns center">
+          <p><a onclick="location.href='index.html'"><img style="cursor: pointer;" src="img/NAFA-logo.png" alt="Logo de Grupo NAFA" /></a></p>
         </div>
+        <div class="large-6 medium-6 small-12 columns center pt4">
+          <p><a onclick="location.href='bag-solutions.html'"><img style="cursor: pointer;" src="img/logo-BagSolutions.png" alt="Logo de Bag Solutions" /></a></p>
+        </div>
+      </div>
+      <div class="row pt1">
+        <div class="large-6 medium-6 small-12 columns center">
+          <p><a onclick="location.href='non-woven-solutions.html'"><img style="cursor: pointer;" src="img/non-wovens-solutions-logo.png" alt="Logo de Non Woven Solutions" /></a></p>
+        </div>
+        <div class="large-6 medium-6 small-12 columns center">
+          <p><a onclick="location.href='forramex.html'"><img style="cursor: pointer;" src="img/forramex-logo.png" alt="Logo de Forramex" /></a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 medium-6 small-12 columns center pt4">
+          <p><a onclick="location.href='papeleria.html'"><img style="cursor: pointer;" src="img/marnatak-logo.png" alt="Logo de Marnatak" /></a></p>
+        </div>
+        <div class="large-6 medium-6 small-12 columns center">
+          <p><a onclick="location.href='marna.html'"><img style="cursor: pointer;" src="img/marna-logo.png" alt="Logo de Marna" /></a></p>
+        </div>
+      </div>
     </section>
 
-      <section class="row" id="contacto" data-anchor="contacto">
+    <section class="row" id="contacto" data-anchor="contacto">
         <h2>Ponte en contacto con nosotros</h2>
-          <div class="large-6 medium-6 small-12 columns">
+          <div class="large-8 large-centered medium-8 medium-centered small-12 columns">
             <form data-abide class="cmxform" id="commentForm" method="post" action="verify.php" novalidate="novalidate">
               <div class="name-field">
                 <label>Tu nombre <small>*requerido</small>
@@ -309,23 +316,24 @@
               <button class="success submit" type="submit">Enviar</button>
             </form>
           </div>  
-          <div class="large-6 medium-6 small-12 columns">
-            <div class="large-12 columns">
-              <i class="step fi-map size-20"> Domicilio<p>Francisco I Madero s/n Letra B. <br>Colonia Los Reyes Ampliaci&oacute;n<br>Estado de M&eacute;xico.<br>La Paz<br>CP. 56400</p></i>
-            </div>
-            <div class="large-12 columns">
-              <i class="step fi-telephone size-20"> Tel&eacute;fono <a href="tel: +52 55 58 58 0300"><p>55 5858 0300</p></a></i>
-            </div>
-            <div class="large-12 columns">
-              <i class="step fi-print size-20"> Fax <a href="fax: +52 55 58 58 8251"><p>55 5858 8251</p></a></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-10 large-centered medium-10 medium-centered small-10 small-centered columns center mb16">
+          <div class="row mb16">
+            <div class="large-8 large-centered medium-8 medium-centered small-10 small-centered columns center mb16">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60220.297505636554!2d-98.971539!3d19.37917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7e09ee6413d%3A0xa0451d707488d2f7!2sGrupo+Nafa!5e0!3m2!1sen!2s!4v1420581935968" width="100%" height="400" frameborder="0" style="border:0"></iframe>
             </div>
+            <div class="large-12 medium-12 small-12 columns center">
+              <p class="fi-map"> Domicilio: Francisco I Madero s/n Letra B. Colonia Los Reyes Ampliaci&oacute;n. Estado de M&eacute;xico. La Paz. CP. 56400</p>
+            </div>
+            <div class="large-6 large-centered medium-6 medium-centered small-10 small-centered columns center">
+              <div class="large-6 columns center">
+                <p class="fi-telephone"> Tel&eacute;fono <a href="tel: +52 55 58 58 0300">(55) 5858 0300</a></p>
+              </div>
+              <div class="large-6 columns center">
+                <p class="fi-print"> Fax <a href="fax: +52 55 58 58 8251">(55) 5858 8251</a></p>
+              </div>
+            </div>
           </div>
-      </section>  
+      </section>
+      
   </div>
 
     <footer>

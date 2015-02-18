@@ -47,7 +47,7 @@
     <div class="row contain-to-grid sticky hide-for-small">
       <div class="large-12 medium-12 columns menu center lh-m" id="top-menu" data-topbar role="navigation" data-options="">
         <div class="large-3 medium-3 columns bh">
-          <a style="cursor: pointer;" onclick="location.href='index.html'" class="transparent">Inicio</a>
+          <a data-scroll="inicio" href="#" class="transparent">Inicio</a>
         </div>
         <div class="large-3 medium-3 columns bh">
           <a data-scroll="productos" href="#" class="transparent">Productos</a>
@@ -81,11 +81,8 @@
       </div>
 
     <div class="row">
-        <div class="row panel">
-          <div class="large-12 medium-12 small-12 columns controls center">
-            <label>Filtrar: <br></label>
-          </div> 
-            <div class="large-12 medium-12 small-12 columns controls center">
+            <div class="large-12 medium-12 small-12 columns controls">
+              <label>Filtrar: </label>
               <button class="filter" data-filter="all">Todas</button>
               <button class="filter" data-filter=".category-1">Pel&iacute;culas adhesivas</button>
               <button class="filter" data-filter=".category-2">Pel&iacute;culas holograma</button>
@@ -97,20 +94,10 @@
               <button class="filter" data-filter=".category-8">Mandiles infantiles</button>
             </div>
             <div class="row">
-              <div class="large-12 medium-12 small-12 columns controls center">
-                <label>Ordenar: <br></label>
-              </div>
-              <div class="large-12 medium-12 small-12 columns controls center">         
-                <button class="sort" data-sort="myorder:asc">Ascendente</button>
-                <button class="sort" data-sort="myorder:desc">Descendente</button>
-              </div>
-            </div>
-            <div class="row">
               <div class="pager-list center">
                 <!-- Pagination buttons will be generated here -->
               </div>
             </div>
-          </div>
             <div class="row">
               <div class="large-12 medium-12 small-12 columns container" id="Container">
 
@@ -251,7 +238,7 @@
 
     <section class="row" id="contacto" data-anchor="contacto">
         <h2>Ponte en contacto con nosotros</h2>
-          <div class="large-6 medium-6 small-12 columns">
+          <div class="large-8 large-centered medium-8 medium-centered small-12 columns">
             <form data-abide class="cmxform" id="commentForm" method="post" action="verify.php" novalidate="novalidate">
               <div class="name-field">
                 <label>Tu nombre <small>*requerido</small>
@@ -286,23 +273,24 @@
               <button class="success submit" type="submit">Enviar</button>
             </form>
           </div>  
-          <div class="large-6 medium-6 small-12 columns">
-            <div class="large-12 columns">
-              <i class="step fi-map size-20"> Domicilio<p>Francisco I Madero s/n Letra B. <br>Colonia Los Reyes Ampliaci&oacute;n<br>Estado de M&eacute;xico.<br>La Paz<br>CP. 56400</p></i>
-            </div>
-            <div class="large-12 columns">
-              <i class="step fi-telephone size-20"> Tel&eacute;fono <a href="tel: +52 55 58 58 0300"><p>55 5858 0300</p></a></i>
-            </div>
-            <div class="large-12 columns">
-              <i class="step fi-print size-20"> Fax <a href="fax: +52 55 58 58 8251"><p>55 5858 8251</p></a></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-10 large-centered medium-10 medium-centered small-10 small-centered columns center mb16">
+          <div class="row mb16">
+            <div class="large-8 large-centered medium-8 medium-centered small-10 small-centered columns center mb16">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60220.297505636554!2d-98.971539!3d19.37917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f7e09ee6413d%3A0xa0451d707488d2f7!2sGrupo+Nafa!5e0!3m2!1sen!2s!4v1420581935968" width="100%" height="400" frameborder="0" style="border:0"></iframe>
             </div>
+            <div class="large-12 medium-12 small-12 columns center">
+              <p class="fi-map"> Domicilio: Francisco I Madero s/n Letra B. Colonia Los Reyes Ampliaci&oacute;n. Estado de M&eacute;xico. La Paz. CP. 56400</p>
+            </div>
+            <div class="large-6 large-centered medium-6 medium-centered small-10 small-centered columns center">
+              <div class="large-6 columns center">
+                <p class="fi-telephone"> Tel&eacute;fono <a href="tel: +52 55 58 58 0300">(55) 5858 0300</a></p>
+              </div>
+              <div class="large-6 columns center">
+                <p class="fi-print"> Fax <a href="fax: +52 55 58 58 8251">(55) 5858 8251</a></p>
+              </div>
+            </div>
           </div>
-      </section>  
+      </section>
+ 
     </div>
 
     <footer>

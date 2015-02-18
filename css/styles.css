@@ -120,17 +120,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', Arial, serif;
 	font-weight: 300;
 	margin: 0.5rem 0;
+	text-align: center;
 	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
 	font-size: 3rem;
-	text-align: center;
 }
 
 .panel h3 {
 	font-weight: 700;
-	text-align: center;
 	color: rgb(234, 107, 0);
 }
 
@@ -252,6 +251,14 @@ i.step.fi-align-justify {
 
 .center {
 	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
 }
 
 .mtb8 {margin: 0.5rem 0 !important;}
@@ -408,7 +415,9 @@ footer {
 
 .accordion .accordion-navigation > a, .accordion dd > a {
 	background: rgb(255,255,255);
-	box-shadow: 1px 1px 55px #888888;
+	-moz-box-shadow: 0 1px 5px #888888;
+	-webkit-box-shadow: 0 1px 5px #888888;
+	box-shadow: 0 1px 5px #888888;
 	border-radius: 25px;
 }
 
@@ -463,6 +472,7 @@ footer {
 .owl-carousel .owl-item{
 	float: left;
 }
+
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;
@@ -758,7 +768,6 @@ div.controls > button{
   color: #dddddd;
   font-size: 16px;
   font-weight: 300;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -793,27 +802,36 @@ div.controls > button + label{
 .container .gap{
   display: inline-block;
   width: 49%;
+  width: 300px;
+  max-height: 150px;
+  overflow: hidden; 
+  background-color: rgb(255,255,255);
+  border-width: 5px;
+  border-color: rgba(255,255,255,0.85);
+  border-style: solid;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container .mix{
   text-align: center; /* originally left*/
-  background: transparent;
+  background: rgb(255,255,255);
   margin-bottom: 2%;
   display: none;
   vertical-align: middle;
 }
 
-	/*.container .mix img {
-		max-height: 200px;
-	}
-
-.container .mix.category-1{
-  border-top: 2px solid limegreen;
+.container .gap {
+	background: transparent;
+	background-color: transparent;
+	border: none;
 }
 
-.container .mix.category-2{
-  border-top: 2px solid yellow;
-}*/
+.container .mix img {
+	
+
+}
 
 .container .mix:after{
   content: ""; /* attr(data-myorder) */
@@ -868,10 +886,9 @@ span.pager.page-number {
 	font-weight: 700;
 	color: #666666;
 	border: 0 none;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+	/*border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;*/
 	display: inline-block;
-	border-radius: 2px;
 	-webkit-appearance: none;
 }
 

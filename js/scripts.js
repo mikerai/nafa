@@ -176,7 +176,7 @@ $(document).ready(function () {
 $(function(){
   $('#Container').mixItUp({
     pagination: {
-      limit: 12,
+      limit: 16,
       loop: false,
       generatePagers: true,
       maxPagers: 3,
