@@ -802,16 +802,8 @@ div.controls > button + label{
 .container .gap{
   display: inline-block;
   width: 49%;
-  width: 300px;
-  max-height: 150px;
-  overflow: hidden; 
-  background-color: rgb(255,255,255);
-  border-width: 5px;
-  border-color: rgba(255,255,255,0.85);
-  border-style: solid;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  height: 150px; 
 }
 
 .container .mix{
@@ -820,6 +812,17 @@ div.controls > button + label{
   margin-bottom: 2%;
   display: none;
   vertical-align: middle;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-color: rgb(255,255,255);
+  border-width: 5px;
+  border-color: rgba(255,255,255,0.85);
+  border-style: solid;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container .gap {
@@ -829,8 +832,12 @@ div.controls > button + label{
 }
 
 .container .mix img {
-	
-
+    position: absolute;
+	margin: auto;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 200px;
 }
 
 .container .mix:after{
