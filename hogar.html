@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="img/fmfavicon.png" type="image/x-icon">
     <link rel="icon" href="img/fmfavicon.png" type="image/x-icon">
+    <style>.fancybox-lock{overflow: visible !important;}</style>
     
   </head>
   <body>
@@ -426,5 +427,14 @@
       $(document).foundation();
     </script>
     <script type='text/javascript' src="https://www.google.com/recaptcha/api.js?hl=es"></script>
+    <script>$('.image').fancybox({
+  padding: 0,
+  helpers: {
+    overlay: {
+      locked: false
+    }
+  }
+});
+    </script>
   </body>
 </html>
