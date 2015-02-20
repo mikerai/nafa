@@ -363,9 +363,9 @@ div.contain-to-grid.sticky.hide-for-small.fixed .lh-m {
 }
 
 .panel {
-	-moz-box-shadow: 1px 1px 55px #888888;
-	-webkit-box-shadow: 1px 1px 55px #888888;
-	box-shadow: 1px 1px 55px #888888;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 	opacity: 1;
 	visibility: visible;
 }
@@ -414,19 +414,23 @@ footer {
 }
 
 .accordion .accordion-navigation > a, .accordion dd > a {
-	background: rgb(255,255,255);
-	-moz-box-shadow: 0 1px 5px #888888;
-	-webkit-box-shadow: 0 1px 5px #888888;
-	box-shadow: 0 1px 5px #888888;
-	border-radius: 25px;
+	background: rgba(234,107,0,0.2);
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: none;
 }
 
 .accordion .accordion-navigation, .accordion dd {
 	margin-bottom: 1rem !important;
 }
 
+.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
+	background: rgba(227,227,227,0.5);
+}
+
 .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-	background: #e8e8e8;
+	background: rgb(255,255,255);
 	box-shadow: 0 0 0 rgb(255,255,255);
 }
 
