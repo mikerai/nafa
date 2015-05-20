@@ -1,5 +1,5 @@
 <?php
-  $email_to = "ventas@gruponafa.com";
+  $email_to = "ventasweb@gruponafa.com";
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$message = $_POST["comment"];
